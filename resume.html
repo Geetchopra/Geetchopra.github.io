@@ -5,34 +5,52 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Yuvraj Geet Chopra">
 	<link rel="icon" type="image/png" href="Assets/GLogoBack.png" size="32x32"/>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="aos.css"/>
+	<title>Geet Chopra</title>
+	<!-- <link rel="stylesheet" href="pagestyle.css"> --> <!-- Resource style -->
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
 	<div class="navigation">
-		<a href="/home" id="nav_button">This Is Me</a>
-		<a href="/portfolio" id="nav_button">Portfolio</a>
-		<a href="/resume" id="nav_button_active">Résumé</a>
-		<a href="/projects" id="nav_button">Projects</a>
-		<a href="/music" id="nav_button">Music</a>
-		<a href="/social" id="nav_button">Contact</a>
+		<!-- <a href="/index" id="nav_button_active">This Is Me</a> -->
+		<a href="/resume" id="nav_button_active">RESUME</a>
+		<a href="/design" id="nav_button">DESIGN</a>
+		<!-- <a href="/projects" id="nav_button">Projects</a> -->
+		<a href="/music" id="nav_button">MUSIC</a>
+		<a href="/about" id="nav_button">ABOUT</a>
 		<hr/>
 	</div>
-	<h1>Yuvraj Geet Singh Chopra</h1>
-	<hr/>
-	<!-- <div class="education">  -->
-	<h2 class="text_left">EDUCATION</h2>
-	<div class="education">
-		<h3 class="left">University of Toronto (4th Year)<br>
-		Computer Science Specialist - Focus in Video Game Design<br>
-		Minor - Music History and Culture</h3>
-		<h3 class="right">Delhi Public School, Gurgaon (2015)<br>
-			High School Dimploma - Science Stream with C++<br>
-			Graduating Result - 95%
-		</h3>
+	<section id="resume">
+	<div class="resume_head">GENERAL</div>
+	<hr id="resume_hr"/>
+	<div id="add-margin">
+		<h3 class="text_left">Full Name: Yuvraj Geet Singh Chopra</h3>
+		<h3 class="text_left">Location: Toronto, ON</h3>
+		<h3 class="text_left">Languages: English, Hindi, Punjabi, French</h3>
+		<h3 class="text_left">Currently looking for Game Design / UX Design Opportunities!</h3>
 	</div>
-
-	<h2 class="text_left">SKILLS</h2>
-	<!-- <h3 class="text_left">PROGRAMMING</h3> -->
+	</section>
+	<section id="resume">
+	<div class="resume_head">EDUCATION</div>
+	<hr id="resume_hr"/>
+	<div class="flexbox">
+		<div>
+			<h3 class="text_left"><a href="https://www.utoronto.ca/">University of Toronto, St. George</a></h3><h4 class="text_left">Final Year of Undergraduate Studies<br>
+			Computer Science Specialist - Focus in Video Game Design<br>
+			Minor - Music History and Culture</h4>
+		</div>
+		<div>
+			<h3 class="text_left"><a href="http://www.dpsgurgaon.org/">Delhi Public School, Gurgaon</a></h3><h4 class="text_left">Batch of 2015<br>High School Diploma - Science Stream with C++<br>Graduating Result - 95%</h4>
+		</div>
+	</div>
+	</section>
+	<section id="resume">
+	<div class="resume_head">SKILLS</div>
+	<hr id="resume_hr"/>
+	<div class="flexbox" id="font-raleway">
+	LEGEND:<span style="color:#4dd0e1">PROGRAMMING</span> <span style="color:#9a59d3">WEB DEVELOPMENT</span> <span style="color:#db8952">GRAPHIC DESIGN</span> <span style="color:#c0db52">SOFTWARE DEVELOPMENT</span> <span style="color:#d65490">OPERATING SYSTEMS</span>
+	</div>
 	<div class="skills_heading">
 		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
@@ -40,7 +58,7 @@
 					Java
 				</div>
 				<div class="back">
-					<img src="Assets/skillgauge.png" width="200px">
+					<img src="Assets/gauge_blue_7.png" width="200px">
 				</div>
 			</div>
 		</div>
@@ -50,7 +68,7 @@
 					C / C++
 				</div>
 				<div class="back">
-					<img src="Assets/skillgauge.png" width="200px">
+					<img src="Assets/gauge_blue_10.png" width="200px">
 				</div>
 			</div>
 		</div>
@@ -60,17 +78,7 @@
 					Python
 				</div>
 				<div class="back">
-					<img src="Assets/skillgauge.png" width="200px">
-				</div>
-			</div>
-		</div>
-		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-			<div class="flipper">
-				<div class="front">
-					HTML / CSS
-				</div>
-				<div class="back">
-					<img src="Assets/skillgauge.png" width="200px">
+					<img src="Assets/gauge_blue_9.png" width="200px">
 				</div>
 			</div>
 		</div>
@@ -80,7 +88,7 @@
 					JavaScript
 				</div>
 				<div class="back">
-					<img src="Assets/skillgauge.png" width="200px">
+					<img src="Assets/gauge_blue_7.png" width="200px">
 				</div>
 			</div>
 		</div>
@@ -90,110 +98,408 @@
 					SQL
 				</div>
 				<div class="back">
-					<img src="Assets/skillgauge.png" width="200px">
+					<img src="Assets/gauge_blue_8.png" width="200px">
 				</div>
 			</div>
 		</div>
-		<!-- <div class="skills">Java</div> -->
-		<!-- <div class="skills">C++/C</div>
-		<div class="skills">Python</div>
-		<div class="skills">HTML/CSS</div>
-		<div class="skills">JavaScript</div>
-		<div class="skills">SQL</div> -->
 	</div>
-	<!-- <h3 class="text_left">GRAPHIC DESIGN</h3> -->
 	<div class="skills_heading">
-		<div class="skills">Photoshop</div>
-		<div class="skills">Illustrator</div>
-		<div class="skills">InDesign</div>
-		<div class="skills">InVision</div>
-		<div class="skills">Adobe XD</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					HTML / CSS
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_purple_9.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					Node.js
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_purple_8.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					Express
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_purple_7.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					React
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_purple_6.png" width="200px">
+				</div>
+			</div>
+		</div>
 	</div>
-	<!-- <h3 class="text_left">DEVELOPMENT</h3> -->
 	<div class="skills_heading">
-		<div class="skills">Git/SVN</div>
-		<div class="skills">Command Line Tools</div>
-		<div class="skills">Unity 5</div>
-		<div class="skills">Eclipse</div>
-		<div class="skills">PyCharm</div>
-		<div class="skills">Ableton Live</div>
-		<div class="skills">Microsoft Office</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					Photoshop
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_orange_9.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					Illustrator
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_orange_9.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					InDesign
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_orange_8.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					InVision
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_orange_6.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					Adobe XD
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_orange_8.png" width="200px">
+				</div>
+			</div>
+		</div>
 	</div>
-	<!-- <h3 class="text_left">Operating Systems</h3> -->
 	<div class="skills_heading">
-		<div class="skills">iOS</div>
-		<div class="skills">Android</div>
-		<div class="skills">Mac OS</div>
-		<div class="skills">Windows</div>
-		<div class="skills">Ubuntu</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					Git / Subversion
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_green_9.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					Command Line Tools
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_green_8.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					Unity 5
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_green_7.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					Ableton Live
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_green_7.png" width="200px">
+				</div>
+			</div>
+		</div>
 	</div>
-	<h2 class="text_left">WORK EXPERIENCE</h2>
+	<div class="skills_heading">
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					iOS
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_magenta_10.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					Android
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_magenta_8.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					Mac OS
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_magenta_9.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					Windows
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_magenta_9.png" width="200px">
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					Ubuntu
+				</div>
+				<div class="back">
+					<img src="Assets/gauge_magenta_7.png" width="200px">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="resume">
+	<div class="resume_head">WORK EXPERIENCE</div>
+	<hr id="resume_hr"/>
 	<ul class="work"> 
-		Graphic Design Assistant at The Entrepreneurship Hatchery, University of Toronto
+		<div class="flexbox"> 
+				<div>GRAPHIC DESIGN ASSISTANT at <a href="https://hatchery.engineering.utoronto.ca">The Entrepreneurship Hatchery, University of Toronto</a></div>
+				<div>2018 - Present</div>
+		</div>
 		<li>Working to completely overhaul the Hatchery branding, including developing a consistent colour scheme, typography, promotional materials etc.</li>
-		<li>Professionally designed logos for many startup teams under the Hatchery through a complex process which helped capture the true essence of the startups.</li>
+		<li>Designed logos for many startup teams under the Hatchery through a complex process which helped capture the true essence of the startups.</li>
 		<li>Redesigned the Hatchery website under proper UI / UX guidelines in order to provide a good user experience to visitors of the website.</li>
 	</ul>
 	<ul class="work"> 
-		Computer Science Instructor at TAIE International Institute, Toronto
+		<div class="flexbox"> 
+				<div>COMPUTER SCIENCE INSTRUCTOR at <a href="https://taie.ca/">TAIE International Institute, Toronto</a></div>
+				<div>Jan 2017 - Mar 2017</div>
+		</div>
 		<li>Taught high school (Grade 12) students introductory Computer Science with programming in C++.</li>
 		<li>Created study material, exams, assignments and projects for thorough learning.</li>
 		<li>My graduating class succeeded with an 86% average grade.</li>
 	</ul>
 	<ul class="work"> 
-		Lecture Capture Videographer at the IIT Department, University of Toronto
+		<div class="flexbox"> 
+				<div>LECTURE CAPTURE VIDEOGRAPHER at the <a href="http://www.artsci.utoronto.ca/main/administration/information-and-instructional-technology">IIT Department, University of Toronto</a></div>
+				<div>Sep 2016 - Mar 2017</div>
+		</div>
 		<li>Recorded weekly lectures and processed them so that they could be uploaded online for future reference by students.</li>
 		<li>Students were able to study better and the recording also made covering-up for missed lectures easier.</li>
 	</ul>
 	<ul class="work"> 
-		Information Technology Intern at Coca Cola Pvt. Ltd., Gurgaon, India
+		<div class="flexbox"> 
+				<div>INFORMATION TECHNOLOGY INTERN at <a href="https://www.coca-colacompany.com/stories/coca-cola-india-one-horizon-where-heritage-converges-with-new">Coca Cola Pvt. Ltd., Gurgaon, India</a></div>
+				<div>Jul 2016 - Aug 2016</div>
+		</div>
 		<li>Assisted in the installation of smart devices in the office for collecting bottler and manufacturer data.</li>
 		<li>This data helped create improved and more efficient sales management procedures.</li>
 	</ul>
-	<h2 class="text_left">PERSONAL ATTRIBUTES</h2>
-	<div class="skills_heading">
-		<div class="skills">Team Player</div>
-		<div class="skills">Good Leader</div>
-		<div class="skills">Organized</div>
-		<div class="skills">Attentive To Detail</div>
-		<div class="skills">Creative</div>
+</section>
+<section id="resume">
+	<div class= "resume_head">LEADERSHIP</div>
+	<hr id="resume_hr"/>
+	<ul class="work">
+			<div class="flexbox"> 
+				<div>URBAN CREW at <a href="https://www.chestnut.utoronto.ca/">Chestnut Residence</a></div>
+				<div>2016 - Present</div>
+			</div>
+			<li>Signed out recreational equipment in the Urban Lounge at Chestnut Residence.</li>
+			<li>Maintained all equipment in the lounge, including the Ping-Pong table, Pool table, Furniture, Board Games etc.</li>
+		</ul>
+		<ul class="work">
+			<div class="flexbox"> 
+				<div>VICE PRESIDENT - INTERNAL of the <a href="https://www.chestnut.utoronto.ca/">Residence Council, Chestnut Residence</a></div>
+				<div>2017 - 2018</div>
+			</div>
+			<li>Was the leader for all internal affairs at the Chestnut Residence.</li>
+			<li>Added new games for the PS4 at the Urban Lounge and a guitar and a new drum set for the music rooms.</li>
+		</ul>
+		<ul class="work">
+			<div class="flexbox"> 
+				<div>SECRETARY of the <a href="https://www.ulife.utoronto.ca/organizations/view/id/55491">Sikh Student Association</a></div>
+				<div>2016 - 2018</div>
+			</div>
+			<li>Organized events for the Association, including Turban Day, Semi-Annual Langar etc.</li>
+			<li>Generated more awareness about the Sikh Community and Sikhism at the University of Toronto.</li>
+		</ul>
+		<ul class="work">
+			<div class="flexbox"> 
+				<div>TREASURER of the <a href="http://hhsingers.sa.utoronto.ca/">Hart House Singers</a></div>
+				<div>2015 - 2016</div>
+			</div>
+			<li>Processed reimbursements for expenses made by students for the Singers.</li>
+			<li>Created the Annual Budget for the 2016-2017 academic year.</li>
+		</ul>
+		<ul class="work">
+			<div class="flexbox"> 
+				<div>PRESIDENT of the <a href="http://www.dpsgurgaon.org/">Senior Student Council, Delhi Public School</a></div>
+				<div>2014 - 2015</div>
+			</div>
+			<li>Organized many student events like Teacher's Day Celebrations etc.</li>
+			<li>Designed and bought batch hoodies for all students of the batch of 2015.</li>
+			<li>Represented the school at various school occasions.</li>
+		</ul>
+		<ul class="work">
+			<div class="flexbox"> 
+				<div>CULTURAL PRESIDENT - MUSIC of the <a href="http://www.dpsgurgaon.org/">Vice Student Council, Delhi Public School</a></div>
+				<div>2013 - 2014</div>
+			</div>
+			<li>Formulated music performances for events like Teacher's Day celebrations, Farewell function for the graduating batch etc.</li>
+			<li>Auditioned and selected appropriate singers to perform at events to have the best possible performance.</li>
+		</ul>
+</section>
+<section id="resume">
+	<div class= "resume_head">ACCOLADES</div>
+	<hr id="resume_hr"/>
+	<div class="flexbox"> 
+		<div class="award" id="width250">
+			<div id="year">2018</div>
+			<div id="awardname">CERTIFICATE OF LEADERSHIP</div>
+			<div id="organization">Chestnut Residence</div>
+		</div>
+		<div class="award" id="width250">
+			<div id="year">2017</div>
+			<div id="awardname">CERTIFICATE OF LEADERSHIP</div>
+			<div id="organization">Chestnut Residence</div>
+		</div>
+		<div class="award" id="width180">
+			<div id="year">2015</div>
+			<div id="awardname">GOLD AWARD</div>
+			<div id="organization">Duke of Edinburgh Program</div>
+		</div>
 	</div>
-	<div class="skills_heading">
-		<div class="skills">Good Listener</div>
-		<div class="skills">Adaptable</div>
-		<div class="skills">Good Decision Maker</div>
-		<div class="skills">Excellent Communicator</div>
-		<div class="skills">Hardworking</div>
+	<div class="flexbox"> 
+		<div class="award" id="width250">
+			<div id="year">2015</div>
+			<div id="awardname">SCHOLAR SPECIAL PRIZE</div>
+			<div id="organization">Delhi Public School</div>
+		</div>
+		<div class="award" id="width250">
+			<div id="year">2014</div>
+			<div id="awardname">SCHOLAR GOLD MEDAL</div>
+			<div id="organization">Delhi Public School</div>
+		</div>
+		<div class="award" id="width180">
+			<div id="year">2013</div>
+			<div id="awardname">1ST PLACE</div>
+			<div id="organization">Sony Vaio BBX</div>
+		</div>
 	</div>
-	<h2 class="text_left">LEADERSHIP</h2>
-	<div class="skills_heading">
-		<div class="skills">VP - Internal (Chestnut Residence Council</div>
-		<div class="skills">Urban Crew (Chestnut Residence)</div>
-		<div class="skills">Treasurer (Hart House Singers)</div>
-	</div>
-	<div class="skills_heading">
-		<div class="skills">President (DPS Senior Student Council)</div>
-		<div class="skills">Cultural President - Music (DPS Vice Student Council)</div>
-	</div>
-	<h2 class="text_left">ACCOLADES (In Progress)</h2>
-	<h2 class="text_left">COMMUNITY SERVICE</h2>
+</section>
+<section id="resume">
+	<div class= "resume_head">COMMUNITY SERVICE</div>
+	<hr id="resume_hr"/>
 	<ul class="work"> 
-		The Shiksha Kendra, Delhi Public School
-		<li>Donation drives and Fundraisers</li>
-		<li>‘Joy of Giving Day’ - Prepared and distributed food to the children of DPS SK.</li>
-		<li>Taught children as part of the Duke of Edinburgh program.</li>
+		<div class="flexbox">
+			<div>
+				<a href="http://www.dpsgurgaon.org/page.php?catID=12">The Shiksha Kendra, Delhi Public School</a>
+			</div>
+			<div>2007-2015</div>
+		</div>
+		<li>Organized and participated in many donation drives and fundraisers for the children of the Shiksha Kendra.</li>
+		<li>Organized a Joy of Giving Day where we prepared and distributed food using supplies we brought from our homes to the children of the Shiksha Kendra.</li>
+		<li>Taught children a variety of subjects like English, Maths and Computer Science as part of the Duke of Edinburgh program.</li>
 	</ul>
 	<ul class="work"> 
-		CanKids India
-		<li>Organised and sang at events organized for Cancer afflicted children and their families.</li>
+		<div class="flexbox">
+			<div>
+				<a href="http://www.cankidsindia.org/">CanKids India</a>
+			</div>
+			<div>2012-2015</div>
+		</div>
+		<li>Performed at events organized for the children at CanKids.</li>
+		<li>Held a christmas carnival at school for the children where they enjoyed performances by us, rides, food and more.</li>
 	</ul>
 	<ul class="work"> 
-		Indian Cancer Society
-		<li>Cyclothon for Cancer Awareness</li>
+		<div class="flexbox">
+			<div>
+				<a href="http://www.indiancancersociety.org/">Indian Cancer Society</a>
+			</div>
+			<div>2014-2015</div>
+		</div>
+		<li>Participated and represented my school in a cyclothon for Cancer awareness held at India Gate, New Delhi.</li>
 	</ul>
 	<ul class="work"> 
-		Tamanna School for Special Children
-		<li>Fashion Show Fundraiser</li>
+		<div class="flexbox">
+			<div>
+				<a href="http://www.tamana.org/">Tamana</a>
+			</div>
+			<div>2014-2015</div>
+		</div>
+		<li>Participated and represented my school at a fashion show fundraiser held by the organization.</li>
 	</ul>
+</section>
+<section>
+	<h3 class="text_center">Click <a id="resumelink" href="Assets/Resume.pdf" target="_blank">here </a> to view a printable résumé.</h3>
+</section> 
+<script src="aos.js"></script>
+    <script>
+	// window.sr = ScrollReveal();
+	// sr.reveal('.design');
+	AOS.init({duration: 700, once: true});
+	</script>
+	<script>
+		const burst = new mojs.Burst({
+		  left: 0, top: 0,
+		  radius:   { 4: 19 },
+		  angle:    45,
+		  children: {
+		    shape:        'line',
+		    radius:       3,
+		    scale:        1,
+		    stroke:       '#FAFAFA',
+		    strokeDasharray: '100%',
+		    strokeDashoffset: { '-100%' : '100%' },
+		    duration:     700,
+		    easing:       'quad.out',
+		  }
+		});
+
+		document.addEventListener( 'click', function (e) {
+		  burst
+		    .tune({ x: e.pageX, y: e.pageY })
+		    .replay();
+		} );
+	</script>
 </body>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </html>

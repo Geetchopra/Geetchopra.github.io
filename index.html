@@ -6,27 +6,63 @@
 	<meta name="author" content="Yuvraj Geet Chopra">
 	<link rel="icon" type="image/png" href="Assets/GLogoBack.png" size="32x32"/>
 	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="aos.css"/>
+	<title>Geet Chopra</title>
 </head>
 <body>
-	<div class="navigation">
-		<a href="/home" id="nav_button_active">This Is Me</a>
-		<a href="/portfolio" id="nav_button">Portfolio</a>
-		<a href="/resume" id="nav_button">Résumé</a>
-		<a href="/projects" id="nav_button">Projects</a>
-		<a href="/music" id="nav_button">Music</a>
-		<a href="/social" id="nav_button">Contact</a>
+	<script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+	<div class="navigation" data-aos="fade-down">
+		<!-- <a href="/index" id="nav_button_active">This Is Me</a> -->
+		<a href="/resume" id="nav_button">RESUME</a>
+		<a href="/design" id="nav_button">DESIGN</a>
+		<!-- <a href="/projects" id="nav_button">Projects</a> -->
+		<a href="/music" id="nav_button">MUSIC</a>
+		<a href="/about" id="nav_button">ABOUT</a>
 		<hr/>
 	</div>
-	<div>
-		<div class="home">
-			<hr class="left"/>Hi, I am Geet!<hr class="right"/>
+		<div class="flexbox" id="home">
+			<hr data-aos="fade-right"/>Hi, I'm Geet!<hr data-aos="fade-left"/>
 		</div>
-		<h3> Aspiring Game Designer with a passion for all thing games! </h3>
+		<div id="home_subhead" data-aos="fade-up">Computer Science Specialist student at the University of Toronto.</div>
+	<div class="main_footer" data-aos="zoom-in" data-aos-delay="2000">
+		<a href="https://twitter.com/ygeetchopra" id="footer_button">TWITTER</a> /
+		<a href="https://facebook.com/geet.s.chopra" id="footer_button">FACEBOOK</a> /
+		<a href="https://github.com/Geetchopra" id="footer_button">GITHUB</a>
+		 / <a href="https://github.com/Geetchopra" id="footer_button">LINKEDIN</a>
 	</div>
-	<div class="main_footer">
-		<a href="https://twitter.com/ygeetchopra" id="footer_button"> Twitter </a> /
-		<a href="https://facebook.com/geet.s.chopra" id="footer_button"> Facebook </a> /
-		<a href="https://github.com/Geetchopra" id="footer_button"> Github </a>
-	</div>
-</body>
+	<script src="aos.js"></script>
+    <script>
+	// window.sr = ScrollReveal();
+	// sr.reveal('.design');
+	AOS.init({duration: 1000, once: true, delay:1000});
+	</script>
+	<script>
+		const burst = new mojs.Burst({
+		  left: 0, top: 0,
+		  radius:   { 4: 19 },
+		  angle:    45,
+		  children: {
+		    shape:        'line',
+		    radius:       3,
+		    scale:        1,
+		    stroke:       '#FAFAFA',
+		    strokeDasharray: '100%',
+		    strokeDashoffset: { '-100%' : '100%' },
+		    duration:     700,
+		    easing:       'quad.out',
+		  }
+		});
+
+		document.addEventListener( 'click', function (e) {
+		  burst
+		    .tune({ x: e.pageX, y: e.pageY })
+		    .replay();
+		} );
+	</script>
+</body>	
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </html>

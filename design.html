@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Yuvraj Geet Chopra">
+	<link rel="icon" type="image/png" href="Assets/GLogoBack.png" size="32x32"/>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="aos.css"/>
+	<title>Geet Chopra</title>
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+	<div class="navigation">
+		<!-- <a href="/index" id="nav_button_active">This Is Me</a> -->
+		<a href="/resume" id="nav_button">RESUME</a>
+		<a href="/design" id="nav_button_active">DESIGN</a>
+		<!-- <a href="/projects" id="nav_button">Projects</a> -->
+		<a href="/music" id="nav_button">MUSIC</a>
+		<a href="/about" id="nav_button">ABOUT</a>
+		<hr/>
+	</div>
+	<h1>GRAPHIC DESIGN PORTFOLIO</h1>
+	<p>My first real design project in Photoshop was in Grade 12 where I contributed to our high school batch's hoodie design. Since then, I have been using the Adobe Creative Suite to design promotional material for numerous occasions. All of my knowledge is self taught, and I am constantly learning more and more. I now have a strong grasp over all the major Adobe applications. Scroll down to see some of my work that I have done over the past few years. Hover over each picture to learn more about it. Head over to my <span style="color:#c0db52">Behance</span> profile to check out more of my work!</p>
+	<hr id="music_hr"/>
+	<div class="design" data-aos="fade-up-right" data-aos-anchor-placement="top-center">
+	  <img src="Assets/GS.jpg" class="image">
+	  <div class="overlay">
+	  	<div class="overlayflexbox" id="stylescape">
+			<h3 class="overlaytext">BRAND STYLESCAPE - GRUMBLE</h3>
+			<div>This is a brand stylescape designed for the start-up Grumble, which is a social application providing food recommendations to users based on their friends' eating choices and restaurants they visit. This stylescape depicts a fun, easy-going and an approachable company environment due to its bright color scheme and rounded, easy-to-read typography scheme. This project was done working at the Entrepreneurship Hatchery at the University of Toronto.</div>
+	  </div>
+	</div>
+	</div>
+	<div class="design" data-aos="fade-up-left" data-aos-anchor-placement="top-center">
+	  <img src="Assets/ScanScript.jpg" class="image">
+	  <div class="overlay">
+		<div class="overlayflexbox" id="stylescape">
+			<h3 class="overlaytext">BRAND STYLESCAPE - SCANSCRIPT</h3>
+			<div>This is a brand stylescape designed for the start-up ScanScript, which is a company creating software to automate prescription entry into pharmacy management software to enable efficient and safe prescription dispensing. This stylescape depicts a professional and experienced company environment. The colour scheme using a lot of saturation also contributes to the look and feel of the brand. This project was done working at the Entrepreneurship Hatchery.</div>
+	  	</div>
+	  </div>
+	</div>
+	<div class="design" data-aos="fade-up-right" data-aos-anchor-placement="top-center">
+	  <img src="Assets/Pulse_Concept.png" class="image">
+	  <div class="overlay">
+		<div class="overlayflexbox" id="pulse">
+			<h3 class="overlaytext">DESIGN CONCEPT - PULSE</h3>
+			<div>Pulse is an event management start-up at the Entrepreneurship Hatchery. What makes them special is that they are using machine learning algorithms to recommend events to users. This design concept depicts the essence of the start-up and shows how their application can reach out to a variety of places. This project was done working at the Entrepreneurship Hatchery at the University of Toronto.</div>
+	  	</div>
+	  </div>
+	</div>
+	<div class="design" data-aos="fade-up-left" data-aos-anchor-placement="top-center">
+	  <img src="Assets/Chestnotes.jpg" class="image">
+	  <div class="overlay">
+		<div class="overlayflexbox" id="program">
+			<h3 class="overlaytext">CHESTNOTES PROGRAM BROCHURE - 2018</h3>
+			<div>Chestnotes is an A Capella choir at Chestnut Residence, University of Toronto. This is a brochure for the concert program that was held in April 2018. The design is in a book style format where the first section is of the outside and the next one is of the inside of the same.</div>
+	  	</div>
+	  </div>
+	  </div>
+	</div>
+	<div class="flexbox" data-aos="fade-up" data-aos-anchor-placement="top-center">
+		<div class="design" id="flexposter">
+		  <img src="Assets/ChestnotesPoster.jpg" class="image">
+		  <div class="overlay">
+			<div class="overlayflexbox" id="poster">
+			<h3 class="overlaytext">CHESTNOTES CONCERT POSTER 2018</h3>
+			<div>This is an advertisement poster designed for the Chestnotes Annual Concert held in April 2018. The design follows consistency in its colour scheme and typography with its program brochure shown above and has a good balance of content needed to invite people to watch the concert.</div>
+	  		</div>
+		  </div>
+		</div>
+		<div class="design" id="flexposter">
+		  <img src="Assets/iwantyou.jpg" class="image">
+		  <div class="overlay">
+			<div class="overlayflexbox" id="poster">
+			<h3 class="overlaytext">CHESTNUT COUNCIL RECRUITMENT POSTER</h3>
+			<div>This poster was designed to recruit two positions for the Residence Council at Chestnut Residence. The design is simple and clear yet effective. Note that the stars on Uncle Sam's head were swapped with Chestnuts!</div>
+	  		</div>
+		  </div>
+		</div>
+	</div>
+	<div class="flexbox" id="end">
+		<div id="star">.</div>
+		<div id="star">.</div>
+		<div id="star">.</div>
+		<div id="star">.</div>
+	</div>
+    <script src="aos.js"></script>
+    <script>
+	AOS.init({duration: 700});
+	</script>
+	<script>
+		const burst = new mojs.Burst({
+		  left: 0, top: 0,
+		  radius:   { 4: 19 },
+		  angle:    45,
+		  children: {
+		    shape:        'line',
+		    radius:       3,
+		    scale:        1,
+		    stroke:       '#FAFAFA',
+		    strokeDasharray: '100%',
+		    strokeDashoffset: { '-100%' : '100%' },
+		    duration:     700,
+		    easing:       'quad.out',
+		  }
+		});
+
+		document.addEventListener( 'click', function (e) {
+		  burst
+		    .tune({ x: e.pageX, y: e.pageY })
+		    .replay();
+		} );
+	</script>
+</body>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>

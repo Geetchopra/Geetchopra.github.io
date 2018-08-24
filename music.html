@@ -6,60 +6,120 @@
 	<meta name="author" content="Yuvraj Geet Chopra">
 	<link rel="icon" type="image/png" href="Assets/GLogoBack.png" size="32x32"/>
 	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="aos.css"/>
+	<title>Geet Chopra</title>
 </head>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <body>
+	<script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
 	<div class="navigation">
-		<a href="/home" id="nav_button"> This Is Me </a>
-		<a href="/portfolio" id="nav_button"> Portfolio </a>
-		<a href="/resume" id="nav_button"> Résumé </a>
-		<a href="/projects" id="nav_button"> Projects </a>
-		<a href="/music" id="nav_button_active"> Music </a>
-		<a href="/social" id="nav_button"> Contact </a>
+		<!-- <a href="/index" id="nav_button_active">This Is Me</a> -->
+		<a href="/resume" id="nav_button">RESUME</a>
+		<a href="/design" id="nav_button">DESIGN</a>
+		<!-- <a href="/projects" id="nav_button">Projects</a> -->
+		<a href="/music" id="nav_button_active">MUSIC</a>
+		<a href="/about" id="nav_button">ABOUT</a>
 		<hr/>
 	</div>
-	<h1>Fun Fact - 'Geet' in Hindi means a song!</h1>
-	<hr/>
+	<h1>VOCAL PERFORMANCES</h1>
+	<p>Singing has been my passion since I was in the 4th Grade. I have been singing in many genres and languages since then and have held lead positions in many choirs throughout my school and college years. Scroll down to see some of my best performances over the past few years. Hope you enjoy them! Fun fact - 'Geet' in Hindi literally means 'a song'!</p>
+	<hr id="music_hr"/>
 	<div class="flexbox" id="music">
-		<video controls>
+		<video id="medley1" controls data-aos="fade-right" data-aos-anchor-placement="top-center">
 		  <source src="/videos/Hindi_medley_1.mp4" type="video/mp4">
 		Your browser does not support the video tag.
 		</video>
-		<h2 id="music_text_right"> Hindi Medley </h2>
+		<div id="music_data_songs" data-aos="fade-left" data-aos-anchor="#medley1" data-aos-anchor-placement="top-center">
+			<h2 id="music_heading_right">HINDI MEDLEY</h2>
+			<h3 id="music_text_right">Dil Se - Indian Student Association Semi Formal</h3>
+			<h3 id="music_text_right">March 2018</h3>
+			<h3 id="music_songs_right">SONGS INCLUDED</h3>
+			<h3 id="music_text_right">Yeh Shaam Mastani - Kati Patang (1971)</h3>
+			<h3 id="music_text_right">Ajeeb Dastan Hai Yeh - Dil Apna aur Preet Parayi (1960)</h3>
+			<h3 id="music_text_right">Gulabi Aankhein - The Train (1970)</h3>
+		</div>
 	</div>
 	<hr id="music_hr"/>
 	<div class="flexbox" id="music">
-		<h2 id="music_text_left"> All of Me </h2>
-		<video controls>
+		<div id="music_data" data-aos="fade-right" data-aos-anchor="#AllOfMe" data-aos-anchor-placement="top-center">
+			<h2 id="music_heading_left">ALL OF ME</h2>
+			<h3 id="music_text_left">Chestnut Residence Open Mic Night</h3>
+			<h3 id="music_text_left">November 2015</h3>
+			<h3 id="music_songs_left">ORIGINALLY PERFORMED BY</h3>
+			<h3 id="music_text_left">John Legend</h3>
+		</div>
+		<video controls id="AllOfMe" data-aos="fade-left" data-aos-anchor-placement="top-center">
 		  <source src="/videos/AllOfMe.mp4" type="video/mp4">
 		Your browser does not support the video tag.
 		</video>
 	</div>
 	<hr id="music_hr"/>
 	<div class="flexbox" id="music">
-		<video controls>
+		<video id="medley2" controls data-aos="fade-right" data-aos-anchor-placement="top-center">
 		  <source src="/videos/Hindi_medley_2.mp4" type="video/mp4">
 		Your browser does not support the video tag.
 		</video>
-		<h2 id="music_text_right"> Hindi Medley 2 </h2>
+		<div id="music_data_songs" data-aos="fade-left" data-aos-anchor="#medley2" data-aos-anchor-placement="top-center">
+			<h2 id="music_heading_right">HINDI MEDLEY 2</h2>
+			<h3 id="music_text_right">Chestnut Residence Open Mic Night</h3>
+			<h3 id="music_text_right">February 2017</h3>
+			<h3 id="music_songs_right">SONGS INCLUDED</h3>
+			<h3 id="music_text_right">Chalte Chalte - Jaise Ko Taisa (1973)</h3>
+			<h3 id="music_text_right">Gulabi Aankhein - The Train (1970)</h3>
+			<h3 id="music_text_right">Maeri - APB. Euphoria (2000)</h3>
+		</div>
 	</div>
 	<hr id="music_hr"/>
 	<div class="flexbox" id="music">
-		<h2 id="music_text_left"> Someone Like You </h2>
-		<video controls>
+		<div id="music_data" data-aos="fade-right" data-aos-anchor="#SomeoneLikeYou" data-aos-anchor-placement="top-center">
+			<h2 id="music_heading_left">SOMEONE LIKE YOU</h2>
+			<h3 id="music_text_left">Chestnotes Annual Concert</h3>
+			<h3 id="music_text_left">April 2018</h3>
+			<h3 id="music_songs_left">ORIGINALLY PERFORMED BY</h3>
+			<h3 id="music_text_left">Adele</h3>
+		</div>
+		<video id="SomeoneLikeYou" controls data-aos="fade-left" data-aos-anchor-placement="top-center">
 		  <source src="/videos/Someone_Like_You.mp4" type="video/mp4">
 		Your browser does not support the video tag.
 		</video>
 	</div>
-	<hr id="music_hr"/>
-	<!-- <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-		<div class="flipper">
-			<div class="front">
-				test
-			</div>
-			<div class="back">
-				testback
-			</div>
-		</div>
-	</div> -->
+	<div class="flexbox" id="end">
+		<div id="star">.</div>
+		<div id="star">.</div>
+		<div id="star">.</div>
+		<div id="star">.</div>
+	</div>
+	<script src="aos.js"></script>
+    <script>
+	AOS.init({duration: 700, once: false});
+	</script>
+	<script>
+		const burst = new mojs.Burst({
+		  left: 0, top: 0,
+		  radius:   { 4: 19 },
+		  angle:    45,
+		  children: {
+		    shape:        'line',
+		    radius:       3,
+		    scale:        1,
+		    stroke:       '#FAFAFA',
+		    strokeDasharray: '100%',
+		    strokeDashoffset: { '-100%' : '100%' },
+		    duration:     700,
+		    easing:       'quad.out',
+		  }
+		});
+
+		document.addEventListener( 'click', function (e) {
+		  burst
+		    .tune({ x: e.pageX, y: e.pageY })
+		    .replay();
+		} );
+	</script>
 </body>
+ <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </html>
