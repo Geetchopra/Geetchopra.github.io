@@ -143,7 +143,6 @@ body {
 }
 
 #email {
-	font-size: 13px;
 	margin-left: 15%;
 	font-weight: 400;
 }
@@ -230,14 +229,22 @@ body {
 	color: #4DD0E1;
 }
 
-video {
+video, iframe {
 	height: 260px;
 	width: 450px;
+	border: none;
 }
 
-#music {
+#music_left {
 	margin-bottom: 5%;
 	margin-top: 5%;
+	flex-wrap: wrap-reverse;
+}
+
+#music_right {
+	margin-bottom: 5%;
+	margin-top: 5%;
+
 }
 
 .design {
@@ -330,11 +337,6 @@ video {
 
 .design:hover .overlay {
   background: rgba(78, 208, 225, 0.9);
-  transition: 0.5s;
-}
-
-.design:hover .text {
-  opacity: 1;
   transition: 0.5s;
 }
 
@@ -537,6 +539,7 @@ p {
     display: -ms-flexbox;
 	display: -webkit-flex;
     display: flex;
+    flex-wrap: wrap;
 	justify-content: center;
 	margin-left: 8%;
 	margin-top: 30px;
@@ -573,12 +576,12 @@ h1 {
 	color: #4DD0E1;;
 }
 
-h2 {
+/*h2 {
 	font-size: 25px;
 	text-align: left;
 	color: #FAFAFA;
 }
-
+*/
 a {
 	text-decoration: none;
 	color: #c0db52;
@@ -614,16 +617,23 @@ h4 {
 
 @media only screen and (max-width: 600px) {
 	body {
-		font-size: 11px;
+		font-size: 11.5px;
+		margin-bottom: 7%;
+
 	}
 	.navigation a{
 		margin-left: 20px;
 		margin-right: 20px;
 	}
+
+	.navigation hr {
+		margin-bottom: 7%;
+	}
+
 	#home {
 		margin-left: 15%;
 		margin-top: 170px;
-		font-size: 25px;
+		font-size: 30px;
 		width: 70%;
 	}
 	#home hr{
@@ -632,7 +642,7 @@ h4 {
 	}
 
 	#home_subhead {
-		font-size: 11px;
+		font-size: 11.5px;
 	}
 	.main_footer {
 		padding-top: 170px;
@@ -641,5 +651,156 @@ h4 {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+	#about_heading {
+		margin-top: 5%;
+		margin-bottom: 4%;
+	}
 
+	#about_hr_top{
+		margin-bottom: 7%;
+	}
+
+	#about_hr_bottom {
+		margin-top: 7%;
+		margin-bottom: 4%;
+	}
+	#textrotation {
+		font-size: 17px;
+	}
+	#email {
+		margin-right: 15%;
+		text-align: justify;
+	}
+	p {
+		margin-top:13px;
+	}
+
+	h1{
+		font-size: 17px;
+	}
+
+	h3 {
+		font-size: 13px;
+		margin-top: 0;
+		line-height: 18px;
+	}
+
+	h4 {
+		font-size: 11.5px;
+		line-height: 20px;
+	}
+
+	#music_hr {
+		margin-top: 7%;
+		margin-bottom: 7%;
+	}
+
+	video, iframe {
+		margin-right: 15%;
+		width: 100%;
+		height: 70%;
+		margin-top: 0;
+	}
+
+	#music_data, #music_data_songs, #music_heading_right, #music_heading_left, #music_text_right, #music_text_left, #music_songs_left, #music_songs_right {
+		text-align: center;
+		width: 100%;
+	}
+
+	#music_data, #music_data_songs {
+		margin-top: 7%;
+	}
+	#music_heading_left, #music_heading_right {
+		font-size: 17px;
+	}
+	#music_text_left, #music_text_right {
+		font-size: 11.5px;
+	}
+	#music_songs_left, #music_songs_right {
+		font-size: 13px;
+	}
+	.design {
+		position: static;
+		margin-bottom: 7%;
+		margin-top: 0;
+	}
+	.design:hover .overlay {
+		background: transparent;
+	}
+	.overlayflexbox {
+		margin: 0;
+		position: static;
+		background: transparent;
+		opacity: 1;
+		color: #FAFAFA;
+		font-weight: 300;
+		padding-bottom: 0;
+	}
+	.overlay {
+		position: static;
+		background: transparent;
+		color: #FAFAFA;
+		opacity: 1;
+	}
+	.overlaytext {
+		position: static;
+		background: transparent;
+		color: #FAFAFA;
+		opacity: 1;
+		font-weight: 300;
+		padding: 0;
+	}
+	#flexposter {
+		width: 100%;
+		margin-bottom: 0;
+	}
+	#poster, #stylescape, #program, #pulse {
+		margin: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.image {
+		padding-top: 7%;
+		margin-bottom: 7%;
+	}
+	.resume_head {
+		font-size: 17px;
+	}
+	@keyframes reveal {
+		from {
+			width: 0;
+		}
+		to {
+			width: 50px;
+		}
+	}
+	#resume_hr {
+		margin-bottom: 7%;
+		margin-top: 2%;
+	}
+
+	.skills_heading {
+		flex-wrap: wrap;
+		margin-bottom: 7%;
+		margin-top: 7%;
+		padding: 0;
+	}
+
+	.work {
+		font-size: 13px;
+	}
+
+	.work li{
+		font-size: 11.5px;
+	}
+
+	#awardname {
+		font-size: 14px;
+	}
+	#organization {
+		top: 15px;
+	}
+	#end {
+		margin-bottom: 0;
+	}
 } 

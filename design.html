@@ -21,9 +21,9 @@
 		<hr/>
 	</div>
 	<h1>GRAPHIC DESIGN PORTFOLIO</h1>
-	<p>My first real design project in Photoshop was in Grade 12 where I contributed to our high school batch's hoodie design. Since then, I have been using the Adobe Creative Suite to design promotional material for numerous occasions. All of my knowledge is self taught, and I am constantly learning more and more. I now have a strong grasp over all the major Adobe applications. Scroll down to see some of my work that I have done over the past few years. Hover over each picture to learn more about it. Head over to my <span style="color:#c0db52">Behance</span> profile to check out more of my work!</p>
+	<p>My first real design project in Photoshop was in Grade 12 where I contributed to our high school batch's hoodie design. Since then, I have been using the Adobe Creative Suite to design promotional material for numerous occasions. All of my knowledge is self taught, and I am constantly learning more and more. I now have a strong grasp over all the major Adobe applications. Scroll down to see some of my work that I have done over the past few years. Hover (Non-touch devices only) over each picture to learn more about it. Head over to my <span style="color:#c0db52">Behance</span> profile to check out more of my work!</p>
 	<hr id="music_hr"/>
-	<div class="design" data-aos="fade-up-right" data-aos-anchor-placement="top-center">
+	<div class="design" data-aos="fade-up-right" data-aos-anchor-placement="top-center" ontouchstart="this.classList.toggle('hover');">
 	  <img src="Assets/GS.jpg" class="image">
 	  <div class="overlay">
 	  	<div class="overlayflexbox" id="stylescape">
@@ -32,7 +32,7 @@
 	  </div>
 	</div>
 	</div>
-	<div class="design" data-aos="fade-up-left" data-aos-anchor-placement="top-center">
+	<div class="design" data-aos="fade-up-left" data-aos-anchor-placement="top-center" ontouchstart="this.classList.toggle('hover');">
 	  <img src="Assets/ScanScript.jpg" class="image">
 	  <div class="overlay">
 		<div class="overlayflexbox" id="stylescape">
@@ -41,7 +41,7 @@
 	  	</div>
 	  </div>
 	</div>
-	<div class="design" data-aos="fade-up-right" data-aos-anchor-placement="top-center">
+	<div class="design" data-aos="fade-up-right" data-aos-anchor-placement="top-center" ontouchstart="this.classList.toggle('hover');">
 	  <img src="Assets/Pulse_Concept.png" class="image">
 	  <div class="overlay">
 		<div class="overlayflexbox" id="pulse">
@@ -50,7 +50,7 @@
 	  	</div>
 	  </div>
 	</div>
-	<div class="design" data-aos="fade-up-left" data-aos-anchor-placement="top-center">
+	<div class="design" data-aos="fade-up-left" data-aos-anchor-placement="top-center" ontouchstart="this.classList.toggle('hover');">
 	  <img src="Assets/Chestnotes.jpg" class="image">
 	  <div class="overlay">
 		<div class="overlayflexbox" id="program">
@@ -61,7 +61,7 @@
 	  </div>
 	</div>
 	<div class="flexbox" data-aos="fade-up" data-aos-anchor-placement="top-center">
-		<div class="design" id="flexposter">
+		<div class="design" id="flexposter" ontouchstart="this.classList.toggle('hover');">
 		  <img src="Assets/ChestnotesPoster.jpg" class="image">
 		  <div class="overlay">
 			<div class="overlayflexbox" id="poster">
@@ -70,12 +70,12 @@
 	  		</div>
 		  </div>
 		</div>
-		<div class="design" id="flexposter">
+		<div class="design" id="flexposter" ontouchstart="this.classList.toggle('hover');">
 		  <img src="Assets/iwantyou.jpg" class="image">
 		  <div class="overlay">
 			<div class="overlayflexbox" id="poster">
 			<h3 class="overlaytext">CHESTNUT COUNCIL RECRUITMENT POSTER</h3>
-			<div>This poster was designed to recruit two positions for the Residence Council at Chestnut Residence. The design is simple and clear yet effective. Note that the stars on Uncle Sam's head were swapped with Chestnuts!</div>
+			<div>This poster was designed to recruit two executive members for the Residence Council at Chestnut Residence. The design is simple and clear yet effective. Did you see that the stars on Uncle Sam's head were swapped with Chestnuts!</div>
 	  		</div>
 		  </div>
 		</div>
@@ -88,7 +88,7 @@
 	</div>
     <script src="aos.js"></script>
     <script>
-	AOS.init({duration: 700});
+	AOS.init({duration: 700, disable: window.innerWidth < 800});
 	</script>
 	<script>
 		const burst = new mojs.Burst({
