@@ -550,6 +550,7 @@ p {
 	font-size: 13px;
 	font-weight: 300;
 	text-align: justify;
+	text-justify: inter-word;
 }
 
 h1 {
