@@ -2,24 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,900');
 
-
-::-webkit-scrollbar {
-	width: 7px;
-}
-
-::-webkit-scrollbar-track {
-	background: #FAFAFA;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #2A2B2C;
-    border: 1.5px solid #FAFAFA;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
 .award {
 	position: relative;
 	margin-bottom: 5%;
@@ -81,6 +63,7 @@ body {
 	font-size: 13px;
 	letter-spacing: 0.5px;
 	line-height: 23px;
+	overflow: scroll;
 }
 
 
@@ -615,15 +598,23 @@ h4 {
 	font-weight: 300;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	body {
 		font-size: 11.5px;
 		margin-bottom: 7%;
 
-	}
+	}/*
+
+	.navigation {
+		margin-top: 0;
+		margin-bottom: 0;
+		
+	}*/
 	.navigation a{
 		margin-left: 20px;
 		margin-right: 20px;
+		padding-top: 25px;
+		padding-bottom: 20px;
 	}
 
 	.navigation hr {
