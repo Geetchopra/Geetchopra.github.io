@@ -4,7 +4,14 @@
 
 .award {
 	position: relative;
-	margin-bottom: 5%;
+}
+
+#awardline1 {
+	margin-bottom: 2.5%;
+}
+
+#awardline2 {
+	margin-bottom: 6.3%;
 }
 
 #width250 {
@@ -52,6 +59,15 @@
 }
 
 
+::-webkit-scrollbar {
+      width: 10px;
+}
+::-webkit-scrollbar-track {
+      background-color: #666;
+}
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2); 
+}
 
 body {
 	background-color: #2A2B2C;
@@ -63,7 +79,8 @@ body {
 	font-size: 13px;
 	letter-spacing: 0.5px;
 	line-height: 23px;
-	overflow: scroll;
+	overflow-y: overlay;
+	overflow-x: hidden;
 }
 
 
@@ -382,7 +399,7 @@ video, iframe {
 
 #resume {
 	margin-top: 5%;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 }
 
 .resume_head {
@@ -449,12 +466,19 @@ p {
 	transition: 0.3s;
 }
 
+#nomargin {
+	margin-top: 0;
+}
 .text_left {
 	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 0;
 }
 
 .text_right {
 	text-align: right;
+	margin-bottom: 0;
+	margin-top: 5px;
 }
 
 .text_center {
@@ -527,14 +551,18 @@ p {
 	justify-content: center;
 	margin-left: 8%;
 	margin-top: 30px;
-	margin-bottom: 30px;
+	
 	margin-right: 8%;
+}
+
+#addbottommargin {
+	margin-bottom: 75px;
 }
 
 .work {
 	font-size: 17px;
 	font-weight: 300;
-	margin-top: 25px;
+	margin-top: 20px;
 	padding: 0;
 }
 
@@ -794,6 +822,10 @@ h4 {
 
 	#awardname {
 		font-size: 14px;
+	}
+
+	.award {
+		margin-bottom: 15px;
 	}
 	#organization {
 		top: 15px;
