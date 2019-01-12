@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,900');
 
+/*
+Colors - 
+	Black - #2A2B2C
+	White - #FAFAFA
+	Blue - #4DD0E1
+	Green - #c0db52
+*/
+
 .award {
 	position: relative;
 }
@@ -605,7 +613,7 @@ a {
 }
 
 #resumelink {
-	color: #4DD0E1;
+	color: #c0db52;
 	padding-bottom: 5%;
 }
 
