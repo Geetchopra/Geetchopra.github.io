@@ -27,7 +27,7 @@ Colors -
 }
 
 #width180 {
-	width:180px;
+	width:280px;
 }
 
 #year {
@@ -573,7 +573,7 @@ p {
 .work {
 	font-size: 17px;
 	font-weight: 300;
-	margin-top: 20px;
+	margin-top: 30px;
 	padding: 0;
 }
 
@@ -583,7 +583,7 @@ p {
 }
 
 .work li{
-	margin-top: 10px;
+	margin-top: 9px;
 	margin-left: 15%;
 	margin-right: 15%;
 	font-size: 13px;
