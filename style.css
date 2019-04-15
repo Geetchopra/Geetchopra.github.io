@@ -10,6 +10,26 @@ Colors -
 	Green - #c0db52
 */
 
+#blue {
+	color: #4DD0E1;
+}
+
+#green {
+	color: #c0db52;
+}
+
+#yellow {
+	color: #F4E025;
+}
+
+#magenta {
+	color: #E26A9B;
+}
+
+#orange {
+	color: #db8952;
+}
+
 .award {
 	position: relative;
 }
@@ -560,7 +580,6 @@ p {
 	justify-content: center;
 	margin-left: 8%;
 	margin-top: 30px;
-	
 	margin-right: 8%;
 }
 
