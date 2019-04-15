@@ -47,34 +47,6 @@
 	// sr.reveal('.design');
 	AOS.init({duration: 700, once: true});
 	</script>
-	<script>
-		const burst = new mojs.Burst({
-		  left: 0, top: 0,
-		  radius:   { 4: 19 },
-		  angle:    45,
-		  children: {
-		    shape:        'line',
-		    radius:       3,
-		    scale:        1,
-		    stroke:       '#FAFAFA',
-		    strokeDasharray: '100%',
-		    strokeDashoffset: { '-100%' : '100%' },
-		    duration:     700,
-		    easing:       'quad.out',
-		  }
-		});
-
-		document.addEventListener( 'click', function (e) {
-		  burst
-		    .tune({ x: e.pageX, y: e.pageY })
-		    .replay();
-		} );
-		document.addEventListener( 'touchstart', function (e) {
-		  burst
-		    .tune({ x: e.pageX, y: e.pageY })
-		    .replay();
-		} );
-	</script>
 </body>
 <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"

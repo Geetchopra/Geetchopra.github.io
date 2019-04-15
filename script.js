@@ -24,7 +24,7 @@ function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0
 externalLinks();
 
 var options = {
-  strings: ["I AM A TEAM PLAYER.", "I AM A GOOD LEADER.", "I AM HARDWORKING.", "I AM ADAPTABLE.", "I AM CREATIVE.", "I AM A GOOD LISTENER.", "I AM GEET!"],
+  strings: ["I AM HARDWORKING.", "I AM A GOOD LEADER.", "I AM A TEAM PLAYER.", "I AM ADAPTABLE.", "I AM CREATIVE.", "I AM A GOOD LISTENER.", "I AM GEET!"],
   typeSpeed: 80,
   backSpeed: 40,
   backDelay: 1000,

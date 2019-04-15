@@ -7,7 +7,6 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-124594675-1');
 	</script> 
 	<meta charset="utf-8">
@@ -21,7 +20,6 @@
 <body>
 	<script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
 	<div class="navigation">
-		<!-- <a href="/index" id="nav_button_active">This Is Me</a> -->
 		<a href="/resume.html" id="nav_button">RESUME</a>
 		<a href="/design.html" id="nav_button_active">DESIGN</a>
 		<!-- <a href="/projects" id="nav_button">Projects</a> -->
@@ -98,35 +96,6 @@
     <script src="aos.js"></script>
     <script>
 	AOS.init({duration: 700, disable: window.innerWidth < 800});
-	</script>
-	<script>
-		const burst = new mojs.Burst({
-		  left: 0, top: 0,
-		  radius:   { 4: 19 },
-		  angle:    45,
-		  children: {
-		    shape:        'line',
-		    radius:       3,
-		    scale:        1,
-		    stroke:       '#FAFAFA',
-		    strokeDasharray: '100%',
-		    strokeDashoffset: { '-100%' : '100%' },
-		    duration:     700,
-		    easing:       'quad.out',
-		  }
-		});
-
-		document.addEventListener( 'click', function (e) {
-		  burst
-		    .tune({ x: e.pageX, y: e.pageY })
-		    .replay();
-		} );
-
-		document.addEventListener( 'touchstart', function (e) {
-		  burst
-		    .tune({ x: e.pageX, y: e.pageY })
-		    .replay();
-		} );
 	</script>
 </body>
 <script
