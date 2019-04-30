@@ -1,24 +1,18 @@
-// var isInViewport = function (element) {
-//     var bounding = element.getBoundingClientRect();
-//     return (
-//         bounding.top >= 0 &&
-//         bounding.left >= 0 &&
-//         bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-//     );
-// };
+window.onscroll = function() {scrollFunction()};
 
-// var hr = document.querySelectorAll('#music_hr');
-// hr[1].style.animationName = "none";
-// hr[1].style.width = "0";
-// window.addEventListener('scroll', function (event) {
-// if (isInViewport(hr[1])) {
-//   hr[1].style.animationName = "grow";
-//   hr[1].style.width = "70%";
-// }
-// }, false);
+function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    document.getElementById("top_button").style.display = "block";
+  } else {
+    document.getElementById("top_button").style.display = "none";
+  }
+}
 
-
+// When the user clicks on the button, scroll to the top of the document
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } } ; 
 externalLinks();
@@ -33,9 +27,5 @@ var options = {
   startDelay: 1500
 }
 
-
 var typed = new Typed("#textrotation", options);
-
-
-
 
