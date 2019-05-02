@@ -9,6 +9,70 @@ Colors -
 	Blue - #4DD0E1
 	Green - #c0db52
 */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#controller {
+	height: 12px;
+	width: 20px;
+	margin-top: 5px;
+	margin-bottom: 0;
+	margin-left: 20px;
+	margin-right: 20px; 
+}
+
+#home2 {
+	margin-left: 27%;
+	width: 46%;
+	justify-content: center;
+}
 
 html {
   scroll-behavior: smooth;
@@ -34,7 +98,7 @@ i {
   position: fixed; 
   bottom: 30px; 
   right: 30px; 
-  z-index: 99; 
+  z-index: 4; 
   border: 2px solid #FAFAFA;
   background-color: transparent; 
   color: #FAFAFA; 
@@ -326,14 +390,12 @@ video, iframe {
 
 .design {
   position: relative;
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 100%;
   margin-bottom: 5%;
   margin-top: 5%;
 }
 
-#flexposter {
+#flexposter1, #flexposter2 {
 	width: 40%;
 	margin-left: 0;
 	margin-right: 0;
@@ -368,7 +430,7 @@ video, iframe {
   display: flex;
   margin-left: 15%;
   margin-right: 15%;
-  color: #2A2B2C;
+  color: #FAFAFA;
   text-align: justify;
   opacity: 0;
   transition: 0.5s;
@@ -381,8 +443,12 @@ video, iframe {
 	padding-top: 7.5%;
 }
 
-#pulse {
+#pulse_overlay {
 	padding-top: 9%;
+}
+
+#project {
+	width:40%;
 }
 
 #program {
@@ -395,7 +461,7 @@ video, iframe {
 }
 
 .overlaytext {
-	color: #2A2B2C;
+	color: #4DD0E1;
 	font-weight: 400;
 	text-align: left;
 }
@@ -409,11 +475,15 @@ video, iframe {
   height: 100%;
   width: 100%;
   transition: 0.5s ease;
-  background: rgba(78, 208, 225, 0);
+  background: rgba(42, 43, 44, 0);
+}
+
+.design:hover {
+	cursor: zoom-in;
 }
 
 .design:hover .overlay {
-  background: rgba(78, 208, 225, 0.9);
+  background: rgba(42, 43, 44, 0.9);
   transition: 0.5s;
 }
 
@@ -852,11 +922,11 @@ h4 {
 		font-weight: 400;
 		padding: 0;
 	}
-	#flexposter {
+	#flexposter1, #flexposter2 {
 		width: 100%;
 		margin-bottom: 0;
 	}
-	#poster, #stylescape, #program, #pulse {
+	#poster, #stylescape, #program, #pulse_overlay {
 		margin: 0;
 		padding-top: 0;
 		padding-bottom: 0;
