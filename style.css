@@ -13,6 +13,8 @@ Colors -
 	Magenta - #E26A9B
 */
 
+
+
 #invalid {
 	color: #FAFAFA;
 	opacity: 0.7;
@@ -514,7 +516,7 @@ video, iframe {
 
 }
 
-.design {
+.design, .hci {
   position: relative;
   width: 100%;
   margin-bottom: 5%;
@@ -523,6 +525,13 @@ video, iframe {
 
 #flexposter1, #flexposter2 {
 	width: 40%;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+}
+
+#hci-poster {
+	width: 45%;
 	margin-left: 0;
 	margin-right: 0;
 	margin-top: 0;
@@ -633,6 +642,53 @@ video, iframe {
 .design:hover .overlayflexbox {
   opacity: 1;
   transition: 0.5s;
+}
+
+.hci .overlay {
+  background: rgba(42, 43, 44, 0.75);
+  transition: 0s;
+}
+
+.hci .overlaytext {
+  text-align: center;
+  font-size: 14pt;
+  animation-name: decrease;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.hci:hover .overlaytext {
+  animation-name: increase;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes increase {
+	from {
+		font-size: 14pt;
+	}
+	to {
+		font-size: 17pt;
+	}
+}
+
+@keyframes decrease {
+	from {
+		font-size: 17pt;
+	}
+	to {
+		font-size: 14pt;
+	}
+}
+
+.hci .overlayflexbox {
+  opacity: 1;
+  width: 100%;
+  margin-left: 0;
+  justify-content: center;
+  padding-top: 55%;
+  transition: 0s;
 }
 
 #large {
