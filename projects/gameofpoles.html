@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124594675-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-124594675-1');
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Yuvraj Geet Chopra">
+	<link rel="icon" type="image/png" href="../Assets/GLogoBack.png" size="32x32"/>
+	<link href="../style.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="../aos.css"/>
+	<title>The Game of Poles</title>
+</head>
+<body>
+	<button onclick="scrollToTop()" id="top_button" title="Scroll to top"><i class="up_arrow"></i></button>
+	<div class="navigation">
+		<a href="../resume.html" id="nav_button">RESUME</a> <span style="opacity:0.5">| </span> 
+		<a href="../design.html" id="nav_button">DESIGN</a> <span style="opacity:0.5">| </span>
+		<a href="../projects.html" id="nav_button">PROJECTS</a> <span style="opacity:0.5">| </span>
+		<a href="../music.html" id="nav_button">MUSIC</a> <span style="opacity:0.5">| </span>
+		<a href="../about.html" id="nav_button">ABOUT</a>
+		<hr/>
+	</div>
+	<h1>THE GAME OF POLES</h1>
+	<p>PROJECT TIMELINE - January 2019 to April 2019
+	<br>ROLES - UI / UX Lead, Programmer, Level Designer, Project Management
+	<br>SKILLS INCORPORATED - Game Design, Game UI / UX Design, Level Design, Software Development
+	<br>SOFTWARE USED - Unity (3D), Adobe Illustrator, Adobe XD
+	<hr id="music_hr"/>
+	<p class="project-body">
+		The Game of Poles is a <span id="highlight">Virtual Reality</span>, physics-based, puzzle shooter in which you manage the magnetization of different objects in the level to solve objectives. Objectives can include killing enemies, solving puzzles or a mixture of both. 
+	</p>
+	<p>
+	This game was built by me and a team of 6 other people, all having different roles in the development process. I was in charge of everything related to the <span id="highlight">User Experience</span> of this game. I also designed and implemented the tutorial level and was one of the 4 programmers for this project. More details about my work are detailed below.
+	</p>
+	<iframe id="trailer" src="https://www.youtube.com/embed/gYRyKNE6VDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h1>UI / UX DESIGN</h1>
+	<p>Designed for the <span id="highlight">HTC Vive</span>, this game was inspired by popular games like Portal 2, The Lab and Superhot. I combined the cartoony environments of Superhot with the futuristic-tech theme of Portal 2 to define the user experience for this game. This resonated with the overall theme of the game, which was also supposed to deliver the same vibe.</p>
+	<p>
+	Since the game involves mainly magnetizing objects using two different polarizations, the entire colour scheme therefore uses only two colours, red and blue along with a neutral white colour. While it sounds very trivial, and almost insufficient, it helped focus the user more on the content and helped me create different colour combinations to deliver information in the game. 
+	</p>
+	<div class="flexbox">
+		  <img src="../Assets/gop/colours.png" class="project-image-nomargin" title="Colour Scheme">
+	</div>
+	<p>
+		Using a <span id="highlight">flat design scheme</span> along with the above shown colours, I created the user interface for this game as shown in the pictures of this project. I also implemented the design and programmed all user interactions in <span id="highlight">Unity</span>, the game engine we used to make this game. There was a greater focus on visual display rather than textual display of information because users tend to grasp information quicker with pictures and also spend less time reading text, especially in video games!
+	</p>
+	<div class="flexbox">
+		  <img src="../Assets/gop/theme.png" class="project-image-margin" title="Design Theme">
+	</div>
+	<p>
+		A big challenge when designing the interface for this game was where to display information at all times. Since this is a VR game, having information show up on a HUD consistently in front of you causes motion sickness, a fact we confirmed during testing on many users in the preliminary designs of our game. Due to this, the only viable way of displaying information tended to be in the environment. Consequently, this involved carefully deciding on where to put the information in the environment so that the players would not miss it. With this in mind, I put most of the information on the wall facing the camera when a player would <span id="highlight">teleport</span> to a corresponding teleporter. This teleportation is, in fact, the only movement mechanic in our game, which is another attempt to curb motion sickness by <span id="highlight">disallowing free movement</span>.
+	</p>
+	<div class="flexbox">
+		  <img src="../Assets/gop/walls.png" class="project-image-margin" title="Design Theme">
+	</div>
+	<p>
+		We also conducted <span id="highlight">playtesting</span> for this game several times using a comprehensive playtesting framework, also formulated by me. You can view the framework <a href="https://docs.google.com/document/d/17g6-UcFP0boEJvyr2hMSn5wJM5neftephA6_7xtP_vg/edit?usp=sharing">here</a>. We gave a lot of importance to user feedback and criticism and tried to find out common issues with the game, ranging from issues with playability, design, or physical interaction with the game. 
+	</p>
+	<h1>TUTORIAL LEVEL DESIGN</h1>
+	<p>
+		The biggest note to keep in mind when designing a tutorial level is to keep it as <span id="highlight">straightforward</span> as possible. I designed simple interactions to be completed step by step in a straight long room, with each interaction unlocking the next one. In the process, players can learn all the mechanics individually, get a feel of the game, and also get an idea of what you can do in the game. There is a great deal of information in this level, but it has been carefully spaced in order to not make it overwhelming. 
+	</p>
+	<div class="flexbox">
+		  <img src="../Assets/gop/tutorialimg.png" class="project-image-margin" title="Tutorial Design">
+	</div>
+	<div class="flexbox" id="gop">
+		<div class="gop-text">
+		An interesting fact about this level design is that this tutorial has nothing to trigger level completion. Once every objective is cleared, the player reaches the end of the tutorial room which signals the player to go to the main menu by pressing the respective button on the Vive controller. This was done mainly to teach all the controls of the game to the player, since many players are not yet familiar with common interfaces for VR headsets, simply because not many people have played any VR games before.
+		</div>
+		<img src="../Assets/gop/gotomenu.png" class="gop-img" title="Menu Controls">
+	</div>
+	<h1>PLAYER MENU AND CREDITS</h1>
+	<p>
+		I used a common concept in VR games to create a 360 degree menu, with different options scattered all around you in VR. Each button was automatically <span id="highlight">highlighted on sight</span> (i.e. by looking at it) and the player could press the trigger button on the controller to select that button. I also created a credits “scene”, which placed you in a room with walls filled with credits for our project. 
+	</p>
+	<div class="flexbox">
+		  <img src="../Assets/gop/menucredits.png" class="project-image-margin" title="Menu Scene (Left) and Credits Scene (Right)">
+	</div>
+	<p>
+		You can view, download and play this game from my <a href="https://github.com/Geetchopra/TheGameOfPoles">GitHub</a> profile. You can also view more pictures of the game on my <a href="https://www.behance.net/gallery/81288997/Game-of-Poles-Game-and-UI-UX-Design">Behance</a> project page. This was the biggest game design project I have done till date, and we also showcased this game at the annual Level Up Game Design Showcase in April 2019, receiving positive feedback from industry professionals and the general audience. I hope you liked it!
+	</p>
+	<div class="flexbox" id="end">
+		<div id="star">.</div>
+		<div id="star">.</div>
+		<div id="star">.</div>
+		<div id="star">.</div>
+	</div>
+</body>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src="../script.js"></script>
+</html>

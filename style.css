@@ -8,7 +8,132 @@ Colors -
 	White - #FAFAFA
 	Blue - #4DD0E1
 	Green - #c0db52
+	Yellow - #F4E025
+	Orange - #db8952
+	Magenta - #E26A9B
 */
+
+#invalid {
+	color: #FAFAFA;
+	opacity: 0.7;
+	margin-bottom: 0.3%;
+	margin-top: 2.5%;
+}
+
+#project-end {
+	margin-bottom: 5%;
+}
+
+#highlight {
+	color: #F4E025;
+}
+
+#gop {
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+.gop-text {
+	width: 65%;
+	text-align: justify;
+}
+
+.gop-img {
+	width: 30%;
+}
+
+.project-image-nomargin {
+	width: 100%;
+}
+
+.project-image-margin {
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+
+#trailer {
+	margin-top: 2%;
+	margin-left: 15%;
+	width: 70%;
+	height: 400px;
+}
+
+.project-body {
+	margin-top: 5%;
+}
+
+.project-head {
+	margin-bottom: 0.3%; 
+	margin-top: 2.5%;
+}
+
+.project {
+  display: inline-block;
+}
+
+.project:after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #4DD0E1;
+  transition: 300ms;
+}
+
+.project:hover:after  {
+  width: 100%;
+}
+
+#blue {
+	color: #4DD0E1;
+}
+
+#blue:after {
+	background: #4DD0E1;
+}
+
+#green {
+	color: #c0db52;
+}
+
+#green:after {
+	background: #c0db52;
+}
+
+#yellow {
+	color: #F4E025;
+}
+
+#yellow:after {
+	background: #F4E025;
+}
+
+#orange {
+	color: #db8952;
+}
+
+#orange:after {
+	background: #db8952;
+}
+
+#magenta {
+	color: #E26A9B;
+}
+
+#magenta:after {
+	background: #E26A9B;
+}
+
+.project-sub {
+	margin-left: 15%; 
+	font-style: italic; 
+	opacity: 0.7;
+	color: #FAFAFA;
+	margin-bottom: 0;
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -48,12 +173,11 @@ Colors -
   right: 35px;
   color: #f1f1f1;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: normal;
   transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -466,6 +590,23 @@ video, iframe {
 	text-align: left;
 }
 
+.overlaysmalltext {
+	color: #c0db52;
+	font-weight: 400;
+	
+	font-size: 15px;
+	margin-top: 10%;
+	margin-bottom: 2%;
+}
+
+#videogamesxhci {
+	padding-top: 10%;
+}
+
+#gameofpoles {
+	padding-top: 11%;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -732,7 +873,7 @@ p {
 }
 
 h1 {
-	font-family: 'Raleway';
+	font-family: 'Nunito Sans';
 	margin-top: 5%;
 	font-size: 20px;
 	margin-left: 15%;
@@ -775,7 +916,7 @@ h3 {
 
 h4 {
 	margin-top: 0;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: 400;
 }
 

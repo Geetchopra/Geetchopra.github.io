@@ -23,6 +23,7 @@ var council = document.getElementById('flexposter2');
 
 var modalImg = document.getElementById("modalImg");
 
+
 grumble.onclick = function(){
   modal.style.display = "block";
   modalImg.src = "Assets/GS.jpg";
