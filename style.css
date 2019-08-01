@@ -663,7 +663,6 @@ video, iframe {
   animation-fill-mode: forwards;
 }
 
-
 @keyframes increase {
 	from {
 		font-size: 14pt;
