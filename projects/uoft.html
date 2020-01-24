@@ -7,7 +7,6 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-124594675-1');
 	</script>
 	<meta charset="utf-8">
@@ -19,6 +18,7 @@
 	<title>UofT Projects</title>
 </head>
 <body>
+	<button onclick="scrollToTop()" id="top_button" title="Scroll to top"><i class="up_arrow"></i></button>
 	<div class="navigation">
 		<a href="../resume.html" id="nav_button">RESUME</a> <span style="opacity:0.5">| </span> 
 		<a href="../design.html" id="nav_button">DESIGN</a> <span style="opacity:0.5">| </span>
@@ -33,14 +33,155 @@
 	<br>SKILLS INCORPORATED - Software Development, Game Design and Development, Graphic Design, UI / UX Design and more.
 	<br>SOFTWARE USED - Various
 	<hr id="music_hr"/>
-	<p>
-		Over the years at the University of Toronto, I have completed a lot of courses spanning different areas of Computer Science, along with some covering topics of Game Design and Development. Most courses involved completing projects using proper development practices and helped me to learn more and develop my skills in those respective topics in Computer Science.
+	<p class="project-body">
+		I recently graduated from the University of Toronto with a degree in Computer Science and a specialization in Game Design. Over these years at UofT, I have completed a lot of courses spanning different areas of Computer Science, including Game Design and Development. Most courses involved completing projects using proper development practices and helped me to learn more and develop my skills in those respective topics in Computer Science. Some specialized courses also taught me about the specifics of Game Design and helped me further my skills in order to secure a career in the gaming industry one day.
 	</p>
 	<p> 
-		You can find below a list of all those courses and projects I have done that are relevant to the job titles I am looking to work as. Unfortunately, in the interest of protection from plagiarism by current students, I am not able to publicly include samples of code completed for the projects as instructed by professors. However, they can be promptly provided if requested!
+		You can find below a list of all those courses and projects I have completed in these four years. You can also filter them out based on relevant topics provided! Unfortunately, in the interest of protection from plagiarism by current students, I am not able to publicly include samples of code completed for the projects as instructed by professors. However, they can be promptly provided via email if requested!
 	</p>
-	<ul class="project-ul">
-		<li> <span id="green">CSC404H1</span> - Introduction to Video Game Design </li>
-
+	<hr id="music_hr"/>
+	<ul class="filters">
+	    <li>
+	        <input checked="true" type="checkbox" value="games"/>
+	        <label>Game Design and Development</label>
+	    </li>
+	    <li>
+	        <input checked="true" type="checkbox" value="software"/>
+	        <label>Software Design and Development</label>
+	    </li>
+	    <li>
+	        <input checked="true" type="checkbox" value="design"/>
+	        <label>Graphic Design</label>
+	    </li>
+	    <li>
+	        <input checked="true" type="checkbox" value="cs"/>
+	        <label>Computer Science (General)</label>
+	    </li>
+	</ul>
+	<hr style="margin-top: 2.5%; margin-bottom: 5%;" id="music_hr"/>
+	<ul class="project-ul" id="filter_items">
+		<li data-type="games"> <span id="yellow">CSC404H1</span> - Introduction to Video Game Design 
+			<ul>
+				<li>The Game of Poles - A virtual reality, puzzle - shooter game where you magnetize and demagnetize objects in the game to solve and progress through levels. This project can be viewed <a href="https://geetchopra.me/projects/gameofpoles.html">here</a>.</li>
+			</ul>
+		</li>
+		<li class="project-li" data-type="games"> <span id="yellow">CSC428H1</span> - Introduction to Human Computer Interaction 
+			<ul>
+				<li>Video Games &times HCI - A comprehensive research summary paper on UI / UX in games. You can view this project in detail <a href="https://geetchopra.me/projects/hci.html">here</a>.</li>
+				<li>Heuristic Evaluation of Cineplex - A comprehensive evaluation of the popular Canadian entertainment website based on Nielsen's Heuristics, followed by its usability study. This paper can be viewed <a href="https://geetchopra.me/Assets/cinplex.pdf">here</a>.</li>
+			</ul>
+		</li>
+		<li class="project-li" data-type="software"> <span id="yellow">CSC384H1</span> - Introduction to Artificial Intelligence
+			<ul>
+				<li>Lunar Lockout Solver - A solver of the Lunar Lockout puzzle based on the A-Star Search algorithm.</li>
+				<li>PacMan AI - An AI for PacMan which uses Minimax and Alpha-Beta Pruning to dodge ghosts and collect coins as quick as possible.</li>
+				<li>KenKen Solver - Uses Constraint Satisfaction Problems and their solutions, like backtracking and forward checking to solve a KenKen puzzle.</li>
+			</ul>
+		</li>
+		<li class="project-li" data-type="design"> <span id="yellow">CSC418H1</span> - Computer Graphics 
+			<ul>
+				<li>Raster Image Conversions - A program to convert an image to different raster types (grayscale, negative etc.) using pixel value manipulation.</li>
+				<li>Ray Casting / Tracing - A program to cast a ray on a scene and then trace it.</li>
+				<li>Shader Pipelines - Implement a rotating earth model using OpenGL.</li>
+			</ul>
+		</li>
+		<li class="project-li" data-type="games"> <span id="yellow">CSC304H1</span> - Algorithmic Game Theory and Mechanism Design
+		</li>
+		<li class="project-li" data-type="software"> <span id="yellow">CSC309H1</span> - Programming on the Web
+			<ul>
+				<li>Trivia Magic - A web based trivia game using HTTP requests to get questions from online databases. The game can be played <a href="https://trivia309.herokuapp.com/">here.</a> </li>
+			</ul>
+		</li>
+		<li class="project-li" data-type="software"> <span id="yellow">CSC301H1</span> - Introduction to Software Engineering
+			<ul>
+				<li>Makers Making Change - Developed a web application for the Neil Squire Society based on their requirements to improve user experience and bring more users to their original website.</li>
+			</ul>
+		</li>
+		<li class="project-li" data-type="design"> <span id="yellow">CSC318H1</span> - The Design of Interactive Computational Media
+		</li>
+		<li class="project-li" data-type="cs"> <span id="yellow">CSC373H1</span> - Algorithm Design, Analysis and Complexity
+		</li>
+		<li class="project-li" data-type="cs"> <span id="yellow">CSC369H1</span> - Operating Systems
+			<ul>
+				<li>File Systems - Developed my own file system, which could be mounted and then you could use standard CLI commands on it like 'cat', 'mkdir', 'touch' etc.</li>
+				<li>Virtual Memory - Implemented various Page Replacement algorithms, like FIFO, LRU and CLOCK.</li>
+			</ul>
+		</li>
+		<li class="project-li" data-type="cs"> <span id="yellow">CSC324H1</span> - Principles of Programming Languages
+			<ul>
+				<li>Guessing Game - Implemented a guessing game using custom monads and polymorphism in Haskell.</li>
+				<li>Parsers and Interpreters - Given a language specification, implemented a parser and interpreter in Haskell.</li>
+			</ul>
+		</li>
+		<li class="project-li" data-type="software"> <span id="yellow">CSC411H1</span> - Machine Learning and Data Mining
+		</li>
+		<li class="project-li" data-type="software"> <span id="yellow">CSC343H1</span> - Introduction to Databases
+		</li>
+		<li class="project-li" data-type="software"> <span id="yellow">CSC207H1</span> - Software Design
+		</li>
+		<li class="project-li" data-type="software"> <span id="yellow">CSC410H1</span> - Software Testing and Verification
+		</li>
+	</ul>
 </body>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script>
+// Current code used from the tutorial at https://www.kirupa.com/html5/filtering_items_in_a_list.htm
+var itemsToFilter = document.querySelectorAll("#filter_items li");
+var checkBoxes = document.querySelectorAll(".filters li input");
+  
+for (var i = 0; i < checkBoxes.length; i++) {
+    checkBoxes[i].addEventListener("click", filterItems, false);
+    checkBoxes[i].checked = true;
+}
+
+function filterItems(e) {
+    var clickedItem = e.target;
+    if (clickedItem.checked == true) {
+        hideOrShowItems(clickedItem.value, "hide", "show");
+    } else if (clickedItem.checked == false) {
+        hideOrShowItems(clickedItem.value, "show", "hide");
+    }
+}
+
+function hideOrShowItems(itemType, classToRemove, classToAdd) {
+    for (var i = 0; i < itemsToFilter.length; i++) {
+        var currentItem = itemsToFilter[i];
+        if (currentItem.getAttribute("data-type") == itemType) {
+            removeClass(currentItem, classToRemove);
+            addClass(currentItem, classToAdd);
+        }
+    }
+}
+
+function addClass(element, classToAdd) {
+    var currentClassValue = element.className;
+    if (currentClassValue.indexOf(classToAdd) == -1) {
+        if ((currentClassValue == null) || (currentClassValue === "")) {
+            element.className = classToAdd;
+        } else {
+            element.className += " " + classToAdd;
+        }
+    }
+}
+        
+function removeClass(element, classToRemove) {
+    var currentClassValue = element.className; 
+    if (currentClassValue == classToRemove) {
+        element.className = "";
+        return;
+    } 
+    var classValues = currentClassValue.split(" ");
+    var filteredList = [];  
+    for (var i = 0 ; i < classValues.length; i++) {
+        if (classToRemove != classValues[i]) {
+            filteredList.push(classValues[i]);
+        }
+    }  
+    element.className = filteredList.join(" ");
+}	
+</script>
+<script src="../script.js"></script>
 </html>
