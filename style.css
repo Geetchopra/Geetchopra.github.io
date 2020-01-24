@@ -22,17 +22,18 @@ Colors -
 
 .filters {
 	margin-top: 2.5%;
-    margin-left: 16%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 12%;
     margin-bottom: 2.5%;
     list-style-position: inside;
     list-style: none;
     padding: 0;
+    display: flex;
+	justify-content: center;
 }
 
 .filters li {
 	padding: 0;
-	display: inline;
 	margin-right: 3%;
 }
 
