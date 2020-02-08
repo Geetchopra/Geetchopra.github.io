@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,900');
 
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
 /*
 Colors - 
 	Black - #2A2B2C
@@ -12,6 +14,14 @@ Colors -
 	Orange - #db8952
 	Magenta - #E26A9B
 */
+
+#italic {
+	font-style: italic;
+}
+
+#code {
+	font-family: 'Inconsolata';
+}
 
 .show {
     display: list-item;
