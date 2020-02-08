@@ -28,28 +28,67 @@
 		<hr/>
 	</div>
 	<h1>BRICKOUT</h1>
-	<p>PROJECT TIMELINE - December 2019 to Present
+	<p>PROJECT TIMELINE - December 2019 to February 2020
 	<br>ROLES - Software Developer, Game Developer, Web Developer
 	<br>SKILLS INCORPORATED - Software Development, Web Design and Development, Game Design and Development
 	<br>SOFTWARE USED - Phaser 3, TypeScript, HTML / CSS, Adobe Illustrator, Adobe Photoshop
+	<br>LINKS - Play the game <a href="game.html">here</a>. View the code on <a href="https://github.com/Geetchopra/BrickOut">GitHub</a>.
 	<hr id="music_hr"/>
-	<p class="project-head" style="margin-top: 5%;">
-		A classic brick breaker game with different types of power-ups in the game. The main purpose of this project is to showcase proper software design and development principles and the application of Phaser 3 with TypeScript. This project is in its beta stage, so please expect some bugs when trying to play the game.
+	<h1>GAME DESIGN</h1>
+	<p>
+		BrickOut is a classic brick breaker game where you need to clear out the brick board as fast as possible with <span id="yellow">three lives</span> to spare. There are several additional <span id="yellow">mechanics</span> and gameplay ingredients that I have added to add a level of complexity and make the game more fun to play. 
 	</p>
 	<p>
-		You can view the most updated build's code on my <a href="https://github.com/Geetchopra/BrickOut">GitHub</a> page. All assets were designed from scratch myself.
+		CONTROLS: <br> Move Paddle - Click and hold the paddle <br> Shoot Ball - Click on the paddle
+		<br>If you lose, please click on the Retry button to restart the game.
+		<br>NOTE: This game’s size is optimized for the mobile, so if you are playing it on your computer, kindly adjust your zoom ratio accordingly.
 	</p>
 	<p>
-		You can play the game <a href="https://geetchopra.me/projects/brickout/game.html">here</a>. The game screen size is optimized for mobile, so if you are playing on a computer, kindly adjust your screen zoom ratio accordingly.
+		There are <span id="yellow">different tiers</span> of bricks, i.e. every brick needs to be hit a different number of times for it to be fully destroyed. These tiers are denoted by the colour scheme below with the yellow brick requiring one hit to destroy and the blue brick four hits to destroy. The colour of the brick changes when hit to indicate how many more hits are needed for it to be fully destroyed. Each colour change awards <span id="yellow">10 points</span>, while a destroyed brick awards <span id="yellow">35 points</span>.
+	</p>
+	<div class="flexbox">
+		  <img src="../../Assets/brickout/bricks.png" class="project-image-margin" title="Brick Colour Tiers">
+	</div>
+	<p>
+		There are also different kinds of <span id="yellow">power ups</span> which provide different abilities as listed in the image below. The catch, however, is that not all power ups are good for the player. For example, the bomb will freeze the paddle (not allowing it to move) for five seconds. This variety of power-ups will provide an additional bit of challenge to players because they will need to dodge certain bad power-ups while trying to catch the good ones.
+	</p>
+	<div class="flexbox">
+		  <img src="../../Assets/brickout/powerups.png" class="project-image-margin" title="Power Ups">
+	</div>
+	<h1>SOFTWARE DEVELOPMENT</h1>
+	<p>
+		BrickOut is a web based game developed with <span id="yellow">TypeScript</span> and <span id="yellow">Phaser 3</span>. I set up an <a href="https://www.npmjs.com/"><span id="yellow">NPM</span></a> development environment for the same projects, which uses <a href="https://webpack.js.org/"><span id="yellow">Webpack</span></a> to bundle all the different scripts and convert it to a single JavaScript file which can be used for distribution. In this case, this is the file that is used to run this game <a href="game.html">here</a>.
+	</p>
+	<div class="flexbox">
+		  <img src="../../Assets/brickout/files.png" class="project-image-margin" title="File Hierarchy">
+	</div>
+	<p>
+		The main focus for this project was to learn about <a href="https://phaser.io/phaser3">Phaser 3</a> and <a href="https://www.typescriptlang.org/">TypeScript</a> development, which is why I kept the game genre very simple. The project uses a strict <span id="yellow">object oriented approach</span>, where each item in the scene you see is an object with its own properties and methods. These objects reside in the <span id="code">Objects</span> folder, and all have a very similar method structure, which complements the <span id="yellow">modular</span> structure of the entire codebase.  By having similar method signatures, like <span id="code">reset()</span>, <span id="code">init()</span>, <span id="code">disable()</span> and more, it becomes more convenient to use and call these methods, especially when there is a need for collaboration amongst other developers. Some classes also contain methods for the core logic of the game, for example, the <span id="code">Brick</span> class contains a method which describes the colour changing logic of the brick when hit, as discussed earlier. There is also a helper object script, which contains some generic helper functions which can be imported and used throughout the project.
 	</p>
 	<p>
-		CONTROLS: <br> Move Paddle - Click and Hold Paddle <br> Shoot Ball - Click on Paddle
+		All these objects are then instantiated in a scene script, called <span id="code">main-scene.ts</span>. Residing in the <span id="code">Scenes</span> folder, this script creates the scene by loading all the resources and then instantiating the various objects in the objects folder. This scene also defines the winning and losing logic, which makes the game playable. There is only one level in this game which starts when the game is loaded, however, the board is <span id="yellow">randomized</span>, which makes for different experiences for each player and still enables them to play the game more than once. 
 	</p>
 	<p>
-		POWER - UPS: <br> Leaf - <span id="yellow">Enlarges the paddle</span> for 10 seconds. <br> Flower - Grants <span id="yellow">invulnerability</span> for 10 seconds <br> Bomb - <span id="yellow">Freezes</span> the paddle for 5 seconds. Beware! <br> Drop - <span id="yellow">Enlarges the ball</span> for 10 seconds.
+		The <span id="code">game.ts</span> file uses the Phaser 3 API to instantiate a game object and load the scene in <span id="code">main-scene.ts</span>. This type of structure enables easy addition of more scenes in the future.
 	</p>
 	<p>
-		If you lose, please click on the Retry button to restart the game.
+		All the <a href="https://github.com/Geetchopra/BrickOut">code</a> in these files is clear, concise and well documented. Feel free to check it out for yourself and suggest improvements and feedback! 
+	</p>
+	<h1>GRAPHIC DESIGN</h1>
+	<p>
+		All the assets in this project, except for the brick wall <a href="https://i.imgur.com/W2lVjp4.jpg">sample</a>, were designed by myself. The whole project uses a <span id="yellow">cartoony design scheme</span>. This scheme fits the brick breaker genre well and makes the game visually appealing and easy on the eyes. 
+	</p>
+	<p>
+		The design scheme mainly describes a wooden board nailed to a brick wall, on which the game is set. <span id="yellow">Heavy strokes</span> and darker coloured borders complement this scheme well and add to its cartoony feel. There is also a plethora of <span id="yellow">different colours</span> popping out from everywhere, which makes the game aesthetically pleasing. This huge colour palette also makes for good visual indicators which indicate the different tiers of bricks and make the power - ups clearly distinguishable.
+	</p>
+	<p>
+		My <a href="https://www.behance.net/gallery/91704417/BrickOut">Behance</a> page for this project also describes future concepts and ideas, which can be implemented in the game. These concepts include a <span id="yellow">user interface</span> (like a settings or a login screen) and generic icons that can go well with this design scheme. 
+	</p>
+	<p>
+		I hope that you enjoyed learning about this project as much as I enjoyed making it. As mentioned before, I welcome feedback and suggestions for improvements on all aspects of the game!
+	</p>
+	<p>
+		<span id="italic">What was your high score?</span>
 	</p>
 	<div class="flexbox" id="end">
 		<div id="star">.</div>
