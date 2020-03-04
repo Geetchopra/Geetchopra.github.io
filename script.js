@@ -20,9 +20,6 @@ var pulse = document.getElementById('pulse');
 var promo = document.getElementById('promo');
 var adyct = document.getElementById('adyct');
 var pliant = document.getElementById('pliant');
-// var chestnotesBrochure = document.getElementById('chestnotesBrochure');
-// var chestnotesPoster = document.getElementById('flexposter1');
-// var council = document.getElementById('flexposter2');
 
 var modalImg = document.getElementById("modalImg");
 
@@ -65,12 +62,6 @@ pliant.onclick = function(){
 // chestnotesPoster.onclick = function(){
 //   modal.style.display = "block";
 //   modalImg.src = "Assets/ChestnotesPoster.jpg";
-//   modalImg.style.width = "90%";
-// }
-
-// council.onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = "Assets/iwantyou.jpg";
 //   modalImg.style.width = "90%";
 // }
 
