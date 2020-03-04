@@ -17,44 +17,62 @@ var modal = document.getElementById('designModal');
 var grumble = document.getElementById('grumble');
 var scanscript = document.getElementById('scanscript');
 var pulse = document.getElementById('pulse');
-var chestnotesBrochure = document.getElementById('chestnotesBrochure');
-var chestnotesPoster = document.getElementById('flexposter1');
-var council = document.getElementById('flexposter2');
+var promo = document.getElementById('promo');
+var adyct = document.getElementById('adyct');
+var pliant = document.getElementById('pliant');
+// var chestnotesBrochure = document.getElementById('chestnotesBrochure');
+// var chestnotesPoster = document.getElementById('flexposter1');
+// var council = document.getElementById('flexposter2');
 
 var modalImg = document.getElementById("modalImg");
 
 
 grumble.onclick = function(){
   modal.style.display = "block";
-  modalImg.src = "Assets/GS.jpg";
+  modalImg.src = "../Assets/GS.jpg";
 }
 
 scanscript.onclick = function(){
   modal.style.display = "block";
-  modalImg.src = "Assets/ScanScript.jpg";
+  modalImg.src = "../Assets/ScanScript.jpg";
 }
 
 pulse.onclick = function(){
   modal.style.display = "block";
-  modalImg.src = "Assets/Pulse_Concept.png";
+  modalImg.src = "../Assets/Pulse_Concept.png";
 }
 
-chestnotesBrochure.onclick = function(){
+promo.onclick = function(){
   modal.style.display = "block";
-  modalImg.src = "Assets/Chestnotes.jpg";
+  modalImg.src = "../Assets/hatchery.jpg";
 }
 
-chestnotesPoster.onclick = function(){
+adyct.onclick = function(){
   modal.style.display = "block";
-  modalImg.src = "Assets/ChestnotesPoster.jpg";
-  modalImg.style.width = "90%";
+  modalImg.src = "../Assets/adyct.jpg";
 }
 
-council.onclick = function(){
+pliant.onclick = function(){
   modal.style.display = "block";
-  modalImg.src = "Assets/iwantyou.jpg";
-  modalImg.style.width = "90%";
+  modalImg.src = "../Assets/pliant.jpg";
 }
+
+// chestnotesBrochure.onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = "Assets/Chestnotes.jpg";
+// }
+
+// chestnotesPoster.onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = "Assets/ChestnotesPoster.jpg";
+//   modalImg.style.width = "90%";
+// }
+
+// council.onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = "Assets/iwantyou.jpg";
+//   modalImg.style.width = "90%";
+// }
 
 window.onclick = function(event) {
   if (event.target == modal) {

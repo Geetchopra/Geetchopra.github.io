@@ -221,7 +221,7 @@ Colors -
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: #FAFAFA;
   font-size: 40px;
   font-weight: normal;
   transition: 0.3s;
@@ -605,6 +605,10 @@ video, iframe {
 }
 
 #stylescape {
+	padding-top: 7.5%;
+}
+
+#promo_overlay {
 	padding-top: 7.5%;
 }
 
