@@ -3,6 +3,8 @@ externalLinks();
 
 window.onscroll = function() {scrollFunction()};
 
+$(document).ready(create_menu());
+
 function scrollFunction() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     document.getElementById("top_button").style.display = "block";
@@ -82,7 +84,31 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+function create_menu() {
 
+  var nav = document.querySelector(".navigation");
+
+  menu = ["resume", "projects", "reviews", "music", "about"];
+
+  var page_name = document.title.split(" ")[0].toLowerCase();
+
+  for (var i = 0; i < menu.length; i++) {
+    var menu_item = document.createElement("a");
+    menu_item.href = "/" + menu[i] + ".html";
+    menu_item.id = menu[i].localeCompare(page_name) == 0 ? "nav_button_active" : "nav_button";
+    menu_item.innerHTML = menu[i].toUpperCase();
+    console.log(menu_item.href);
+    nav.appendChild(menu_item);
+
+    if (i < menu.length - 1) {
+      var span = document.createElement("span");
+      span.id = "half-opacity";
+      span.innerHTML = " | ";
+      nav.appendChild(span);
+    }
+  }
+  nav.appendChild(document.createElement("hr"));
+}
 
 
 
