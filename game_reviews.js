@@ -116,7 +116,7 @@ function sort_table() {
 
         var table = $('#review-table').DataTable(table_config);
         table
-            .order( [ 3, 'des' ] )
+            .order( [ 4, 'des' ] )
             .draw();
 
         var el = document.querySelector("label");
