@@ -15,6 +15,20 @@ Colors -
 	Magenta - #E26A9B
 */
 
+#resume-highlight {
+	text-decoration: underline;
+	font-weight: bolder;
+}
+
+#see-more {
+	margin-top: 2%;
+	margin-left: 15%;
+	margin-right: 15%;
+	color: #C0DB52;
+	font-size: 13px;
+	cursor: pointer;
+}
+
 #search {
 	text-align: center;
   	margin-top: 4%;
@@ -32,6 +46,10 @@ Colors -
 	margin-top: 4%;
 	margin-bottom: 4%;
 	text-align: justify;
+}
+
+#bold {
+	font-weight: bold;
 }
 
 input {
@@ -1043,7 +1061,7 @@ p {
 .work {
 	font-size: 17px;
 	font-weight: 400;
-	margin-top: 30px;
+	margin-top: 40px;
 	padding: 0;
 }
 
