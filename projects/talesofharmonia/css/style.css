@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Passion+One&display=swap');
+
+body {
+	margin:0;
+	padding: 0;
+	background-color : #2A2B2C;
+	scroll-behavior: smooth;
+	color: #FAFAFA;
+	line-height: 30px;
+	font-family: "Assistant";
+	font-size: 17px;
+}
+
+::selection {
+  color: #84D651;
+}
+
+html {
+	color: #FAFAFA;
+}
+
+a {
+	text-decoration: none;
+	color: #FAFAFA;
+}
+
+p {
+	text-align: justify;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.feature-img {
+  height: 400px;
+}
+
+#features {
+  margin-top: 7%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.top-margin {
+  margin-top: 7%;
+}
+
+.addMargin {
+	margin-top: 7%;
+}
+
+.add-little-margin {
+  margin-top: 2%;
+}
+
+.subHeader {
+	font-size: 40px;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.panel {
+    position: fixed;
+    z-index: 100;
+    left: -15.625em; /*left or right and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+    background-color: #2A2B2C;
+}
+
+ul {
+	padding: 5%;
+	text-align: center;
+	list-style: none;
+	margin-top: 30%;
+}
+
+li {
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.navBar {
+  margin-top: 5%;
+}
+
+.navBarLink {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FAFAFA;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+#panelFooter {
+	margin-top: 120%;
+}
+
+.footer-text {
+  margin-left: 10%;
+}
+
+.logo-small {
+  display: flex;
+  justify-content: center;
+}
+
+.navBarLink:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navBarLink:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.subheader {
+  text-align: center;
+  font-size: 20px;
+}
+
+.flexbox {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.textforeground {
+  text-align: center;
+  grid-row: 1;
+  grid-column: 1;
+  color: #fbed2d;
+  z-index: 20;
+}
+
+.bigtext {
+  font-size: 30px;
+}
+
+.smalltext {
+  font-size: 20px;
+  color: #fcfcfc;
+}
+
+.logo {
+  /*margin-top: 7%;*/
+  margin-top: 5%;
+  width: 550px;
+}
+
+.imggrid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.store-icon {
+  width: 200px;
+}
+
+.grid2 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.trailer {
+}
+
+iframe {
+  width: 640px;
+  height: 360px;
+}
+
+.stroke {
+  text-align: center;
+  z-index: 19;
+  grid-row: 1;
+  grid-column: 1;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #000;
+}
+
+#passion-one{
+  font-family: "Passion One";
+}
+
+#assistant {
+  font-family: "Assistant";
+}
+
+.overlay {
+	background-color: #161616;
+	position: fixed;
+	z-index: 50;
+	width: 100%;
+	height: 100%;
+  display: none;
+}
+
+.mobile-overlay {
+  background-color: #161616;
+  position: fixed;
+  z-index: -1;
+  opacity: 85%;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.overlay-front {
+  display: none;
+  animation: overlayanimback 0.1s linear;
+  animation-fill-mode: forwards;
+}
+
+.overlay-back {
+  display: block;
+  animation: overlayanim 0.1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes overlayanimback {
+  0% {
+    opacity: 35%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes overlayanim {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 35%;
+  }
+}
+
+.page {
+  width: 70%;
+  height: 100%;
+}
+
+.textstroke {
+  width: 70%;
+  position: absolute;
+  display: grid;
+}
+
+#animatedBackground {
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  float: right;
+  right: 0;
+  background: url("../Assets/World.png");
+  background-repeat: repeat-y;
+  background-position: 0 0;
+  background-size: 100% auto;
+/*adjust s value for speed*/
+  animation: animatedBackground 200s linear infinite;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: 10000px;
+  }
+}
+
+#person {
+  position: relative;
+  top: 90%;
+  display: flex;
+  justify-content: center;
+  z-index: 4;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+#offer {
+  position: relative;
+  top: 25%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.offerimg {
+  width: 40%;
+}
+
+/*.close-button {
+  width: 50px;
+  height: 50px;
+  background: url("../Assets/CloseButtonMain.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  left: -25px;
+  bottom: 490px;
+}
+
+.close-button:hover {
+  background: url("../Assets/CloseButtonHighlight.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.close-button:active {
+  background: url("../Assets/CloseButtonPress.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}*/
+
+
+.wrap {
+    position: fixed;
+    top : 48%;
+    padding: 1%;
+    z-index: 100;
+    font-size: 20px;
+}
+
+input[type=text], input[type=email], select, textarea {
+  background-color: #fcfcfc;
+  color: #161616;
+  font-family: "Assistant";
+  font-size: 15px;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 3px solid #161616; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 1%; /* Add a top margin */
+  margin-bottom: 3%; /* Bottom margin */
+  resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+textarea {
+  height: 150px;
+}
+
+#category {
+  font-family: "Assistant";
+  color: #161616;
+  font-size: 15px;
+}
+
+.label {
+  text-transform: uppercase;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background: url("../Assets/MenuButtonMain.png");
+  font-family: "Passion One";
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #1E4C00;
+  text-align: center;
+  padding: 13px 75px 13px 55px;
+  border: none;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background: url("../Assets/MenuButtonHighlight.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+input[type=submit]:active {
+  background: url("../Assets/MenuButtonClick.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.personal {
+  margin-top: 7%;
+}
+
+/* Add a background color and some padding around the form */
+.form {
+  /*border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;*/
+}
+
+#form-flexbox {
+  margin-top: 7%;
+}
+
+#highlight {
+  color: #FFF315;
+}
+
+hr { 
+  display: block;
+  margin-top: 12%;
+  margin-bottom: 2%;
+  border: 2px solid #fcfcfc;
+  width: 80%;
+} 
+
+.footer {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos {
+  justify-content: space-around;
+  flex-wrap: nowrap !important;
+}
+
+.personal-logo {
+  height: 200px;
+  width: 200px;
+}
+
+.game-logo {
+  height: 200px;
+  margin-top: 5%;
+}
+
+.copyright {
+  margin-top: 4%;
+  text-align: center;
+  opacity: 50%;
+}
+
+.no-margin {
+  padding-bottom: 1%;
+}
+
+#mobile-features-flexbox {
+  width: 100%;
+  margin: 0;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  justify-content: space-around;
+  align-content: center;
+  height: 80%;
+}
+
+#mobile-features-flexbox .feature-img {
+  height: 250px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.footer-flexbox {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.customize {
+  margin-top: 5%;
+  width: 280px;
+}
+
+
+@media only screen and (max-width: 1600px) and (min-width: 1300px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  iframe {
+    width: 400px;
+    height: 250px;
+  }
+
+  .store-icon {
+    width: 150px;
+  }
+
+  #form-flexbox {
+    margin-top: 5%;
+  }
+
+  .feature-img {
+    height: 300px;
+  }
+
+  .personal-logo {
+    height: 180px;
+    width: 180px;
+  }
+
+  #panelFooter {
+    margin-top: 80%;
+  }
+
+  .game-logo {
+    height: 180px;
+  }
+
+  .navBarLink {
+    font-size: 15px;
+  }
+
+  hr {
+    margin-top: 10%;
+  }
+
+  .logo {
+    /*margin-top: 7%;*/
+    margin-top: 5%;
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 700px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  input[type=text], input[type=email], select, textarea {
+    font-size: 12px;
+    width: 100%; /* Full width */
+    padding: 6px; /* Some padding */ 
+    margin-top: 1%; /* Add a top margin */
+    margin-bottom: 3%; /* Bottom margin */
+  }
+
+  textarea {
+    height: 80px;
+  }
+
+  #category {
+    font-size: 12px;
+  }
+
+  iframe {
+    width: 360px;
+    height: 210px;
+  }
+
+  .store-icon {
+    width: 130px;
+  }
+
+  .game-text {
+    font-size: 10pt;
+    margin-top: 2%;
+  }
+
+  .flexbox {
+    flex-wrap: wrap;
+  }
+
+  .trailer {
+    margin-top: 3%;
+  }
+
+  .subheader {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 15px;
+  }
+
+  #features {
+    justify-content: space-around;
+  }
+
+  .bigtext {
+    font-size: 19px;
+  }
+
+  .feature-img {
+    height: 200px;
+  }
+
+  .logos {
+    margin-top: 0%;
+  }
+
+  .personal {
+    margin-top: 5%;
+  }
+
+  .navBar {
+    margin-top: 0;
+  }
+
+  #panelFooter {
+    margin-top: 50%;
+  }
+
+  .personal-logo {
+    height: 120px;
+    width: 120px;
+  }
+
+  .final-page {
+    margin-top: 3%;
+  }
+
+  .game-logo {
+    margin-top: 2%;
+    height: 120px;
+  }
+
+  .navBarLink {
+    font-size: 12px;
+  }
+
+  .logo {
+    /*margin-top: 7%;*/
+    margin-top: 3%;
+    width: 350px;
+  }
+
+  hr {
+    margin-top: 6%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  iframe {
+    width: 360px;
+    height: 210px;
+  }
+
+  .footer-flexbox {
+    flex-wrap: wrap;
+  }
+
+  .imggrid {
+    margin-top: 3%;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .store-icon {
+    width: 100px;
+  }
+
+  .grid2 {
+    grid-row: 1;
+    grid-column: 2
+  }
+
+  .flexbox {
+    flex-wrap: wrap;
+  }
+
+  .trailer {
+    margin-top: 12%;
+  }
+
+  .subheader {
+    margin-left: 10%;
+    margin-right: 10%;
+
+    font-size: 12px;
+  }
+
+  .world {
+    width: 100%;
+    z-index: -2;
+    position: fixed;
+  }
+
+  #animatedBackground {
+    width: 100%;
+  }
+
+  #person, #offer {
+    display: none;
+  }
+
+  .mobile-overlay {
+    display: block;
+  }
+
+  .logo {
+    /*margin-top: 7%;*/
+    margin-top: 5%;
+    width: 350px;
+  }
+
+  .page, .textstroke {
+    width: 100%;
+  }
+
+  .bigtext {
+    font-size: 17px;
+  }
+
+  .feature-img {
+    height: 250px;
+  }
+
+  .personal-logo {
+    margin-left: 20%;
+    height: 80px;
+    width: 80px;
+  }
+
+  .game-logo {
+    margin-top: 1%;
+    height: 80px;
+  }
+
+  .navBarLink {
+    font-size: 12px;
+    padding-top: 5%;
+  }
+
+  #menu, .menuLink {
+    display: none;
+  }
+
+  hr {
+    margin-top: 6%;
+  }
+
+  #features {
+    display: none;
+  }
+
+  .game-text {
+    font-size: 14px;
+    margin-bottom: 9%;
+  }
+
+  input[type=text], input[type=email], select, textarea, #category {
+    font-size: 12px;
+  }
+}
