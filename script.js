@@ -88,7 +88,7 @@ function create_menu() {
 
   var nav = document.querySelector(".navigation");
 
-  menu = ["resume", "projects", "reviews", "music", "about"];
+  menu = ["resume", "projects", "ratings", "music", "about"];
 
   var page_name = document.title.split(" ")[0].toLowerCase();
 
