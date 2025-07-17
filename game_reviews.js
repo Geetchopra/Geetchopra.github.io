@@ -15,117 +15,62 @@ var firebaseConfig = {
   
 
 
+// Database reference
 const dbRef = firebase.database().ref();
-dbRef.child("games").get().then((snapshot) => {
-  if (snapshot.exists()) {
-    for (var i = 0; i < snapshot.numChildren(); i++) {
-        //console.log(snapshot.child(i).val());
-        list.push(snapshot.child(i).val());
+
+// Function to get data from Firebase and update the table
+async function getDataAndUpdateTable() {
+  try {
+    const snapshot = await dbRef.child("games").get();
+    if (snapshot.exists()) {
+      const list = Object.values(snapshot.val());
+      updateTable(list);
+    } else {
+      console.log("No data available");
     }
-    update_table();
-  } else {
-    console.log("No data available");
+  } catch (error) {
+    console.error(error);
   }
-}).catch((error) => {
-  console.error(error);
-});
-
-
-
-//https://www.geeksforgeeks.org/how-to-convert-json-data-to-a-html-table-using-javascript-jquery/
-function update_table() {
-    var cols = [];
-      
-    for (var i = 0; i < list.length; i++) {
-        for (var k in list[i]) {
-            if (cols.indexOf(k) === -1) {
-                  
-                // Push all keys to the array
-                cols.push(k);
-            }
-        }
-    }
-      
-    // Create a table element
-    var table = document.getElementById("review-table");
-
-    var thead = document.createElement("thead");
-    table.appendChild(thead);
-
-    // Create table row tr element of a table
-    //var tr = table.insertRow(-1);
-      var tr = thead.insertRow(-1);
-
-    for (var i = 0; i < cols.length; i++) {
-          
-        // Create the table header th element
-        var theader = document.createElement("th");
-        theader.innerHTML = cols[i].replace(String(i), "");
-          
-        // Append columnName to the table row
-        tr.appendChild(theader);
-    }
-
-    var tbody = document.createElement("tbody");
-    table.appendChild(tbody);
-      
-    // Adding the data to the table
-    for (var i = 0; i < list.length; i++) {
-          
-        // Create a new row
-        trow = tbody.insertRow(-1);
-        for (var j = 0; j < cols.length; j++) {
-            var cell = trow.insertCell(-1);
-              
-            // Inserting the cell at particular place
-            cell.innerHTML = list[i][cols[j]];
-        }
-    }
-      
-    // Add the newly created table containing json data
-    var el = document.getElementById("review-table");
-    sort_table();
-    //el.innerHTML = "";
-    el.appendChild(table);
-}    
-
-function sort_table() {
-    
-    // const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
-
-    // const comparer = (idx, asc) => (a, b) => ((v1, v2) => 
-    //     v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    //     )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-    // // do the work...
-    // document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-    //     const table = th.closest('table');
-    //     Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-    //         .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-    //         .forEach(tr => table.appendChild(tr) );
-    // })));
-
-    var table_config = {
-        paging: false,
-        lengthChange: false,
-        info: false
-
-    }
-    $(document).ready( function () {
-        $.fn.dataTable.moment( 'MMM YYYY' );
-
-        var table = $('#review-table').DataTable(table_config);
-        table
-            .order( [ 4, 'des' ] )
-            .draw();
-
-        var el = document.querySelector("label");
-        var child = el.firstChild;
-        child = child.nextSibling;
-        el.innerHTML = "";
-        el.appendChild(child);
-} );
 }
-    
+
+// Function to update the table
+function updateTable(list) {
+  // Get the table element
+  const table = document.getElementById("review-table");
+
+  // Create the table header
+  const thead = document.createElement("thead");
+  table.appendChild(thead);
+  const tr = thead.insertRow(-1);
+
+  // Get the column names from the first object in the list
+  const cols = Object.keys(list[0]);
+
+  // Create the table headers
+  cols.forEach((col) => {
+    const theader = document.createElement("th");
+    theader.innerHTML = col.replace(String(col[0]), "");
+    tr.appendChild(theader);
+  });
+
+  // Create the table body
+  const tbody = document.createElement("tbody");
+  table.appendChild(tbody);
+
+  // Sort the list by game score in descending order
+  list.sort((a, b) => b[Object.keys(a)[4]] - a[Object.keys(a)[4]]);
+
+  // Create the table rows
+  list.forEach((item) => {
+    const trow = tbody.insertRow(-1);
+    cols.forEach((col) => {
+      const cell = trow.insertCell(-1);
+      cell.innerHTML = item[col];
+    });
+  });
+}
+
+// Call the function to get data and update the table
+getDataAndUpdateTable();
 
 
